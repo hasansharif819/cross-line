@@ -1,0 +1,25 @@
+uuid: 70187d34-f8b3-45f0-b966-10ddc52f10aa
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2b98331f-d7fc-40d2-b315-a976639c2c2a'
+  module:
+    - block_content
+  theme:
+    - crossline
+id: crossline_newsletter
+theme: crossline
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:2b98331f-d7fc-40d2-b315-a976639c2c2a'
+settings:
+  id: 'block_content:2b98331f-d7fc-40d2-b315-a976639c2c2a'
+  label: Newsletter
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

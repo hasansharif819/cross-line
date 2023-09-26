@@ -1,0 +1,25 @@
+uuid: c6899493-ceda-4988-9e80-d4bc76bb94f6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7a944b53-a1eb-4af3-8b3f-cfc75d423db7'
+  module:
+    - block_content
+  theme:
+    - crossline
+id: crossline_getintouch
+theme: crossline
+region: footer
+weight: -5
+provider: null
+plugin: 'block_content:7a944b53-a1eb-4af3-8b3f-cfc75d423db7'
+settings:
+  id: 'block_content:7a944b53-a1eb-4af3-8b3f-cfc75d423db7'
+  label: 'Get In Touch'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

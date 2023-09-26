@@ -1,0 +1,25 @@
+uuid: a8325412-1e3c-4f34-a809-c176cf2bbe3d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6ba232f3-bc9d-42a7-a59d-1d20f98eec5c'
+  module:
+    - block_content
+  theme:
+    - crossline
+id: crossline_whycrossline
+theme: crossline
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:6ba232f3-bc9d-42a7-a59d-1d20f98eec5c'
+settings:
+  id: 'block_content:6ba232f3-bc9d-42a7-a59d-1d20f98eec5c'
+  label: 'Why Cross Line?'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

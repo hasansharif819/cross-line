@@ -4,6 +4,7 @@ framework:
       dist/css/all.css: {}
       
   js:
+    filterizr-gallery/jquery.filterizr.min.js: {}
     dist/js/all.js: {}
   dependencies:
     - core/jquery

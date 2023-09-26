@@ -1,0 +1,25 @@
+uuid: 3ba2f56c-e37e-4663-ab1a-cc7d251b3866
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - crossline
+id: crossline_mainnavigation
+theme: crossline
+region: footer
+weight: -7
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Quick Links'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

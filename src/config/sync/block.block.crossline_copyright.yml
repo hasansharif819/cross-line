@@ -1,0 +1,25 @@
+uuid: c76c3a62-a261-4c98-9d1b-9d98fc72c2f4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:06e665a2-1fd0-45d2-b401-66629afd62af'
+  module:
+    - block_content
+  theme:
+    - crossline
+id: crossline_copyright
+theme: crossline
+region: copyright
+weight: 0
+provider: null
+plugin: 'block_content:06e665a2-1fd0-45d2-b401-66629afd62af'
+settings:
+  id: 'block_content:06e665a2-1fd0-45d2-b401-66629afd62af'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
