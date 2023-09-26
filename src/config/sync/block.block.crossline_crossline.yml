@@ -1,0 +1,34 @@
+uuid: 0ba2dc1f-97b3-4343-a2f0-97bddfccce82
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero_block:2104c8f5-9201-40df-b53f-4264725dbe83'
+  module:
+    - block_classes
+    - block_content
+    - system
+  theme:
+    - crossline
+third_party_settings:
+  block_classes:
+    block_class: argentenian-block
+id: crossline_crossline
+theme: crossline
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:2104c8f5-9201-40df-b53f-4264725dbe83'
+settings:
+  id: 'block_content:2104c8f5-9201-40df-b53f-4264725dbe83'
+  label: 'Cross Line'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

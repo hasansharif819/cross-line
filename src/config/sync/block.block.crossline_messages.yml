@@ -11,7 +11,7 @@ _core:
 id: crossline_messages
 theme: crossline
 region: content
-weight: -6
+weight: -9
 provider: null
 plugin: system_messages_block
 settings:

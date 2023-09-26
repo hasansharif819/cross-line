@@ -9,7 +9,7 @@ _core:
 id: crossline_local_tasks
 theme: crossline
 region: content
-weight: -3
+weight: -5
 provider: null
 plugin: local_tasks_block
 settings:

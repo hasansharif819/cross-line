@@ -11,7 +11,7 @@ _core:
 id: crossline_help
 theme: crossline
 region: content
-weight: -2
+weight: -4
 provider: null
 plugin: help_block
 settings:
