@@ -1,0 +1,22 @@
+uuid: 366798e8-ee0e-4b8b-a558-c4ed61d6be85
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - crossline
+_core:
+  default_config_hash: QlQL96mhbS6dQy47HUMaGbEAjhws6SuuoyILmVcSbXA
+id: crossline_content
+theme: crossline
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

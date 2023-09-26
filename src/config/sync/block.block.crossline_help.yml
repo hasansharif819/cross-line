@@ -1,0 +1,22 @@
+uuid: d95078af-9d7c-415e-a20c-a4b88e60d0fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - crossline
+_core:
+  default_config_hash: dk4H0AaN-3lss1aSac8uCP1UFnrSFqw1jgKOL-Jz3Gw
+id: crossline_help
+theme: crossline
+region: content
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

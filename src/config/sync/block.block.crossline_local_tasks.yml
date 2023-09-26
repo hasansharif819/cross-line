@@ -1,0 +1,22 @@
+uuid: d351180d-2873-44ae-b7cf-7097e84b5efe
+langcode: en
+status: true
+dependencies:
+  theme:
+    - crossline
+_core:
+  default_config_hash: I3JHY8avMjj48pjUzLnPd62Y5kVQWN46uEKGkKbT-7U
+id: crossline_local_tasks
+theme: crossline
+region: content
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

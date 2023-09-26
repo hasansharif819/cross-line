@@ -1,0 +1,22 @@
+uuid: 721fa2f0-0957-4c83-a8a8-9ad14c2bf4cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - crossline
+_core:
+  default_config_hash: M81E3Czb9owiXF7CkmI0r-7NgxbghkppA-wTy382cZo
+id: crossline_breadcrumbs
+theme: crossline
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

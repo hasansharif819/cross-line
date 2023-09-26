@@ -1,0 +1,25 @@
+uuid: 8b973806-5071-4042-b5b9-13e282fc4362
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - crossline
+_core:
+  default_config_hash: jCwrOnwfI0tM3bOoF5GXjmgMBeuPJkyCycAsAsfQ-mo
+id: crossline_branding
+theme: crossline
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: 9a257095-d760-40c2-91ce-ec57bc56d628
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - crossline
+_core:
+  default_config_hash: 0IsmPY9jPuELcq9DXA3OzzQgO2VSScq9qGa2djPI4h8
+id: crossline_main_navigation
+theme: crossline
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 0a0795cf-3c6d-4e61-8318-ba52b0f7f14d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - crossline
+_core:
+  default_config_hash: '-Y7K9t9b8T5b_vIf-R0RZExOqptY605YHnSDvp9I4Ic'
+id: crossline_local_actions
+theme: crossline
+region: content
+weight: -1
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

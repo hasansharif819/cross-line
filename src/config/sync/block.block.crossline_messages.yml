@@ -1,0 +1,22 @@
+uuid: 31615510-1c0a-43a0-bdcc-ba6ecce6a903
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - crossline
+_core:
+  default_config_hash: KRyirZG1gE1Ujs8ij8QOaz8dsTPiLGNAJZFiFU39RjQ
+id: crossline_messages
+theme: crossline
+region: content
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }
