@@ -1,0 +1,9 @@
+framework:
+  css:
+    theme:
+      dist/css/all.css: {}
+      
+  js:
+    dist/js/all.js: {}
+  dependencies:
+    - core/jquery

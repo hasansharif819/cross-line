@@ -1,0 +1,46 @@
+.block-views-blockfeatured-food-receipes-block-1 {
+  margin-bottom: 100px; }
+  .block-views-blockfeatured-food-receipes-block-1 .container {
+    text-align: center; }
+    .block-views-blockfeatured-food-receipes-block-1 .container h2 {
+      border-bottom: 2px solid #e25111;
+      display: inline-block;
+      padding-bottom: 10px;
+      margin-bottom: 50px; }
+    .block-views-blockfeatured-food-receipes-block-1 .container .view-content .owl-stage-outer .owl-item {
+      padding: 30px !important; }
+      .block-views-blockfeatured-food-receipes-block-1 .container .view-content .owl-stage-outer .owl-item .receipe-wrapper {
+        height: 100%;
+        text-align: left; }
+        .block-views-blockfeatured-food-receipes-block-1 .container .view-content .owl-stage-outer .owl-item .receipe-wrapper .receipe-description {
+          height: 100%;
+          display: flex;
+          gap: 20px;
+          margin-top: 20px; }
+          .block-views-blockfeatured-food-receipes-block-1 .container .view-content .owl-stage-outer .owl-item .receipe-wrapper .receipe-description .receipe-date {
+            background-color: #e25111;
+            color: #ffffff;
+            height: 100px;
+            padding: 20px 10px;
+            text-align: center;
+            width: 60px; }
+        .block-views-blockfeatured-food-receipes-block-1 .container .view-content .owl-stage-outer .owl-item .receipe-wrapper .receipe-title a {
+          color: #e25111;
+          font-size: 20px; }
+    .block-views-blockfeatured-food-receipes-block-1 .container .view-content .owl-nav {
+      display: none; }
+
+@media (max-width: 991px) {
+  .block-views-blockfeatured-food-receipes-block-1 {
+    margin-bottom: 50px; }
+    .block-views-blockfeatured-food-receipes-block-1 .container {
+      text-align: start; }
+      .block-views-blockfeatured-food-receipes-block-1 .container h2 {
+        font-size: 28px;
+        margin-bottom: 30px; }
+      .block-views-blockfeatured-food-receipes-block-1 .container .view-content .owl-stage-outer .owl-item {
+        padding: 0 !important; }
+        .block-views-blockfeatured-food-receipes-block-1 .container .view-content .owl-stage-outer .owl-item .receipe-wrapper .receipe-body {
+          margin-top: 10px; } }
+
+/*# sourceMappingURL=featured_receipe.css.map */

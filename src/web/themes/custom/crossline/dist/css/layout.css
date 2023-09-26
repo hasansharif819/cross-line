@@ -1,0 +1,19 @@
+.container {
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.row {
+  margin-left: -20px;
+  margin-right: -20px; }
+  .row > * {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+.region-sidebar-first,
+.region-sidebar-second,
+.region-footer,
+.region-content {
+  padding: 0; }
+
+/*# sourceMappingURL=layout.css.map */

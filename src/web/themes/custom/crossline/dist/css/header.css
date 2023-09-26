@@ -1,0 +1,84 @@
+header {
+  left: 0;
+  position: absolute;
+  width: 100%;
+  transition: 0.7s;
+  z-index: 100; }
+  header .navbar-toggler {
+    border: 0;
+    padding: 0; }
+    header .navbar-toggler:focus {
+      box-shadow: none; }
+    header .navbar-toggler .navbar-toggler-icon {
+      color: #e25111;
+      background-image: none;
+      font-family: var(--font-fontawesome);
+      font-size: 36px;
+      font-style: inherit;
+      font-weight: 600;
+      height: auto; }
+      header .navbar-toggler .navbar-toggler-icon::before {
+        content: '\f00d'; }
+    header .navbar-toggler.collapsed .navbar-toggler-icon::before {
+      content: '\f0c9'; }
+  header .navbar-nav li a {
+    color: #ffffff;
+    padding: 0 !important;
+    margin-right: 30px; }
+    header .navbar-nav li a::after {
+      content: '';
+      display: block;
+      width: 0%;
+      height: 2px;
+      background: #e25111;
+      transition: width 0.5s;
+      margin-top: 5px; }
+    header .navbar-nav li a:hover {
+      color: #e25111; }
+      header .navbar-nav li a:hover::after {
+        width: 100%; }
+    header .navbar-nav li a:focus {
+      color: #e25111; }
+  header .navbar-nav li .is-active {
+    color: #e25111 !important; }
+
+.sticky-header {
+  background: #ffffff;
+  box-shadow: 0 15px 18px -3px rgba(0, 0, 0, 0.1);
+  min-height: 90px;
+  position: fixed; }
+  .sticky-header .navbar-nav li a {
+    color: #000000; }
+    .sticky-header .navbar-nav li a:hover {
+      color: #000000; }
+  .sticky-header .navbar-nav li .is-active {
+    color: #e25111 !important; }
+
+@media (max-width: 991px) {
+  header {
+    background: var(--color-white);
+    box-shadow: 0 15px 18px -3px rgba(0, 0, 0, 0.1); }
+    header .navbar-nav {
+      border-top: 1px solid var(--color-radical-red);
+      margin-top: 15px;
+      padding: 15px 0; }
+      header .navbar-nav .nav-item {
+        padding: 10px 0; }
+        header .navbar-nav .nav-item .nav-link {
+          color: var(--color-black); }
+          header .navbar-nav .nav-item .nav-link::before {
+            display: none; }
+        header .navbar-nav .nav-item .dropdown-menu {
+          box-shadow: none;
+          padding: 0; }
+          header .navbar-nav .nav-item .dropdown-menu > .nav-item {
+            padding: 2px 0; }
+    header.sticky-header {
+      min-height: unset;
+      top: 0 !important; } }
+
+@media (max-width: 767px) {
+  header .navbar-brand img {
+    height: 36px; } }
+
+/*# sourceMappingURL=header.css.map */

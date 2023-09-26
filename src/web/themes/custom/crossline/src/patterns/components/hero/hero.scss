@@ -1,0 +1,52 @@
+// Utilities
+//
+// Import variables and mixins
+// Should contain NO css output.
+// Only variables / mixins / settings.
+@import '../../global/utils/init';
+
+.hero-wrapper {
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color-white);
+  display: flex;
+  margin-bottom: 100px;
+  min-height: 500px;
+  padding: 100px 0;
+  position: relative;
+  text-align: center;
+
+  &::before {
+    background: var(--color-black);
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .sub-head {
+    position: relative;
+  }
+}
+
+@include lg {
+
+  .hero-wrapper {
+    margin-bottom: 50px;
+    margin-top: 62px;
+  }
+}
+
+@include md {
+
+  .hero-wrapper {
+    min-height: 300px;
+    width: 100%;
+    padding: 50px 0;
+  }
+}

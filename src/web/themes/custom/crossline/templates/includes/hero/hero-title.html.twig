@@ -1,0 +1,16 @@
+{% set hero_image = node.field_hero_image.entity.fileuri %}
+
+{% if hero_image %}
+	<section class="hero-wrapper" style="background-image: url({{ hero_image | image_style('hero_image') }})">
+{% else %}
+	<section class="hero-wrapper no-image">
+{% endif %}
+  <div class="container">
+    <div class="row">
+      <div class="order-1">
+        {{ page.page_title }}
+        <h4 class="sub-head">{{ node.field_sub_head.value }}</h4>
+      </div>
+    </div>
+  </div>
+</section>

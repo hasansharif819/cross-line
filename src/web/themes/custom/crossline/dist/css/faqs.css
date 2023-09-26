@@ -1,0 +1,8 @@
+.faqs-page .node--type-page .node__content {
+  margin-bottom: 100px; }
+
+@media (max-width: 991px) {
+  .faqs-page .node--type-page .node__content {
+    margin-bottom: 50px; } }
+
+/*# sourceMappingURL=faqs.css.map */

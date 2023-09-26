@@ -1,0 +1,107 @@
+footer {
+  background: #171717;
+  color: #ffffff;
+  padding: 50px 0; }
+  footer .container .region-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 0 30px; }
+    footer .container .region-footer h2,
+    footer .container .region-footer h5 {
+      border-bottom: 2px solid #e25111;
+      display: inline-block;
+      font-size: 24px;
+      margin-bottom: 15px;
+      padding-bottom: 10px; }
+    footer .container .region-footer ul li a {
+      font-size: 16px;
+      text-decoration: none;
+      color: #ffffff; }
+      footer .container .region-footer ul li a::before {
+        content: '\f178';
+        font-family: "Font Awesome 5 Free";
+        font-weight: bold;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        font-size: 9px; }
+    footer .container .region-footer .newsletter {
+      margin-top: 20px; }
+      footer .container .region-footer .newsletter .form-group {
+        margin-bottom: 20px; }
+        footer .container .region-footer .newsletter .form-group .form-control {
+          background-color: #ffffff;
+          background-image: none;
+          border: none;
+          border-radius: 30px;
+          color: #000000;
+          display: block;
+          font-size: 14px;
+          height: 40px;
+          line-height: 1.42857143;
+          padding: 6px 12px;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          width: 100%; }
+        footer .container .region-footer .newsletter .form-group .btn-submit {
+          background: #e25111;
+          color: #ffffff;
+          border: none;
+          border-radius: 25px;
+          font-size: 16px;
+          line-height: 1;
+          padding: 10px 20px; }
+    footer .container .region-footer .icon {
+      margin-bottom: -5px; }
+      footer .container .region-footer .icon::before {
+        content: '\f0e0';
+        display: inline-block;
+        font-family: "Font Awesome 5 Free";
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 5px;
+        margin-bottom: 3px;
+        vertical-align: middle; }
+    footer .container .region-footer .address::before {
+      content: '\f3c5';
+      display: inline-block;
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      font-size: 15px;
+      margin-right: 5px;
+      margin-bottom: 3px;
+      vertical-align: middle; }
+    footer .container .region-footer .phone a {
+      color: #e25111; }
+    footer .container .region-footer .phone::before {
+      content: '\f095';
+      display: inline-block;
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      font-size: 15px;
+      margin-right: 5px;
+      margin-bottom: 3px;
+      vertical-align: middle; }
+    footer .container .region-footer .mail a {
+      color: #e25111; }
+    footer .container .region-footer .mail::before {
+      content: '\f0e0';
+      display: inline-block;
+      font-family: "Font Awesome 5 Free";
+      font-size: 15px;
+      font-weight: bold;
+      margin-right: 5px;
+      margin-bottom: 3px;
+      vertical-align: middle; }
+  footer .container .region-copyright .field--name-body {
+    text-align: center; }
+
+@media (max-width: 991px) {
+  footer {
+    padding: 50px 0 30px; }
+    footer .container .region-footer {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 25px;
+      padding: 0 0 10px; } }
+
+/*# sourceMappingURL=footer.css.map */

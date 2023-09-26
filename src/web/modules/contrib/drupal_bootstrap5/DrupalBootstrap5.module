@@ -1,0 +1,25 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function drupal_bootstrap5_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the drupal_bootstrap5 module.
+    case 'help.page.drupal_bootstrap5':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('An easy way to install bootstrap 5 on your site for developpers.') . '</p>';
+      $output .= '<p>' . t('The module just add the latest version of Bootstrap 5 CSS & JS assets, directly into the head of every page of your site, instead of having to import it (sometime painfully) in your theme') . '</p>';
+      $output .= '<p>' . t('You will still have to customize your theme accordingly.') . '</p>';
+	  return $output;
+
+    default:
+  }
+}
+
+function DrupalBootstrap5_page_attachments(array &$page) {
+$page['#attached']['library'][] = 'DrupalBootstrap5/drupalbootstrap5';
+}

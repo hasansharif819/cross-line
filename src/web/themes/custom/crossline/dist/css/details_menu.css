@@ -1,0 +1,35 @@
+.container .node--type-menu {
+  margin-bottom: 100px; }
+  .container .node--type-menu footer {
+    display: none; }
+  .container .node--type-menu .node__content {
+    line-height: 30px; }
+    .container .node--type-menu .node__content .field--name-field-chinese-title .field__label {
+      font-family: "Marcellus", sans-serif; }
+    .container .node--type-menu .node__content .field--name-field-menu-type .field__label {
+      font-family: "Marcellus", sans-serif; }
+    .container .node--type-menu .node__content .field--name-field-menu-type .field__item a {
+      color: #000000; }
+    .container .node--type-menu .node__content .field--name-field-chinese-menu-type .field__label {
+      font-family: "Marcellus", sans-serif; }
+    .container .node--type-menu .node__content .field--name-field-chinese-menu-type .field__item a {
+      color: #000000; }
+    .container .node--type-menu .node__content .field--name-body p {
+      margin: 0; }
+      .container .node--type-menu .node__content .field--name-body p:first-child::before {
+        content: 'Description: ';
+        font-weight: bold;
+        font-size: 16px;
+        font-family: "Marcellus", sans-serif; }
+    .container .node--type-menu .node__content .field--name-field-price .field__label {
+      font-family: "Marcellus", sans-serif; }
+    .container .node--type-menu .node__content .field--name-field-price .field__item::before {
+      content: '$'; }
+    .container .node--type-menu .node__content .field--name-field-featured {
+      display: none; }
+
+@media (max-width: 991px) {
+  .container .node--type-menu {
+    margin-bottom: 50px; } }
+
+/*# sourceMappingURL=details_menu.css.map */

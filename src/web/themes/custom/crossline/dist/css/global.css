@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-display: fallback;
+  src: url("../fonts/jost.ttf"); }
+
+@font-face {
+  font-family: 'Marcellus';
+  font-style: normal;
+  font-display: fallback;
+  src: url("../fonts/marcellus.ttf"); }
+
+/* stylelint-disable property-no-vendor-prefix */
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-light-black: #171717;
+  --color-blue: #22558e;
+  --color-grey-darkest: #2d2d2d;
+  --color-grey-dark: #a8aaac;
+  --color-grey: #e5e5e5;
+  --color-grey-light: #d2d3d4;
+  --color-grey-lightest: #f7f7f7;
+  --font-fontawesome: 'Font Awesome 5 free'; }
+
+*[id] {
+  scroll-margin-top: 150px; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  overflow-x: hidden;
+  transition: 0.5s; }
+
+body,
+p,
+li {
+  line-height: 1.4; }
+
+a {
+  text-decoration: none; }
+
+p {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  word-break: break-word; }
+  p:last-child {
+    margin-bottom: 0; }
+  p a {
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration: none; }
+  p ol,
+  p ul {
+    font-size: 18px;
+    margin: 0;
+    line-height: 27px;
+    padding-left: 19px; }
+
+article ol,
+article ul {
+  font-size: 18px;
+  margin: 0;
+  line-height: 27px;
+  padding-left: 19px; }
+  article ol li:last-child,
+  article ul li:last-child {
+    margin-bottom: 30px; }
+
+article.node--type-kitchen-staff, article.node--type-our-specialities, article.node--type-receipes {
+  margin-top: 30px;
+  margin-bottom: 80px; }
+  article.node--type-kitchen-staff .node__content > .field, article.node--type-our-specialities .node__content > .field, article.node--type-receipes .node__content > .field {
+    margin-bottom: 50px; }
+    article.node--type-kitchen-staff .node__content > .field:last-child, article.node--type-our-specialities .node__content > .field:last-child, article.node--type-receipes .node__content > .field:last-child {
+      margin-bottom: 0; }
+
+hr {
+  background: #e5e5e5;
+  border: 0;
+  height: 1px;
+  margin: 60px 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Marcellus", sans-serif; }
+
+h1 {
+  font-size: 60px; }
+
+h2 {
+  font-size: 36px;
+  line-height: 36px; }
+
+h3 {
+  font-size: 26px;
+  line-height: 30px; }
+
+h4 {
+  font-size: 24px;
+  line-height: 28px; }
+
+h5 {
+  font-size: 22px;
+  line-height: 30px; }
+
+iframe {
+  aspect-ratio: 16/9;
+  height: auto;
+  width: 100%; }
+
+.main_container {
+  overflow: hidden; }
+
+table {
+  max-width: 100%; }
+
+.block-page-title-block {
+  position: relative;
+  opacity: 0.9; }
+
+@media (max-width: 991px) {
+  article.node--type-kitchen-staff, article.node--type-our-specialities, article.node--type-receipes {
+    margin-top: 30px;
+    margin-bottom: 50px; }
+    article.node--type-kitchen-staff .node__content > .field, article.node--type-our-specialities .node__content > .field, article.node--type-receipes .node__content > .field {
+      margin-bottom: 30px; } }
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 32px; }
+  h2 {
+    font-size: 28px;
+    line-height: 32px; }
+  article ol,
+  article ul {
+    font-size: 15px;
+    line-height: 24px; }
+    article ol li,
+    article ul li {
+      line-height: 24px; }
+      article ol li:last-child,
+      article ul li:last-child {
+        margin-bottom: 15px; }
+  p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 24px; }
+    p a {
+      font-size: 15px; }
+    p ol li,
+    p ul li {
+      font-size: 15px; } }
+
+/*# sourceMappingURL=global.css.map */

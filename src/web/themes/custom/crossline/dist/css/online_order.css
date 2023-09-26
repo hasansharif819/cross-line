@@ -1,0 +1,83 @@
+#block-tengritag-webform {
+  background-image: url("/themes/custom/tengritag/images/Palermo+flan+pic.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 700px;
+  border-bottom: 5px solid;
+  border-top: 5px solid;
+  position: relative;
+  color: #ffffff;
+  margin-bottom: 100px;
+  background-attachment: fixed; }
+  #block-tengritag-webform > .container {
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+    margin-bottom: 150px; }
+    #block-tengritag-webform > .container h2 {
+      border-bottom: 2px solid #e25111;
+      display: inline-block;
+      margin-bottom: 50px;
+      padding-bottom: 10px; }
+    #block-tengritag-webform > .container form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      color: #000000;
+      -webkit-column-gap: 30px;
+      -moz-column-gap: 30px;
+      column-gap: 30px; }
+      #block-tengritag-webform > .container form .form-item {
+        margin-top: 0; }
+        #block-tengritag-webform > .container form .form-item label {
+          color: #ffffff;
+          margin-bottom: 15px; }
+      #block-tengritag-webform > .container form .form-actions {
+        color: #ffffff;
+        bottom: -70px;
+        position: absolute; }
+        #block-tengritag-webform > .container form .form-actions .js-form-submit {
+          background-color: transparent;
+          border: 2px solid #bb7f16;
+          border-radius: 4px;
+          color: #bb7f16;
+          display: inline-block;
+          font-family: 'Jost', sans-serif;
+          font-weight: 500;
+          letter-spacing: 1px;
+          padding: 12px 40px;
+          text-transform: uppercase;
+          transition: 0.4s; }
+          #block-tengritag-webform > .container form .form-actions .js-form-submit:hover {
+            background-color: #ffffff;
+            color: #000000; }
+  #block-tengritag-webform::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0; }
+
+@media (max-width: 991px) {
+  #block-tengritag-webform {
+    margin-bottom: 50px; }
+    #block-tengritag-webform > .container {
+      position: relative;
+      z-index: 1;
+      margin-top: 50px;
+      margin-bottom: 110px; }
+      #block-tengritag-webform > .container h2 {
+        margin-bottom: 30px; }
+      #block-tengritag-webform > .container form {
+        grid-template-columns: repeat(1, 1fr); }
+        #block-tengritag-webform > .container form .form-actions {
+          bottom: -70px;
+          position: absolute; }
+          #block-tengritag-webform > .container form .form-actions .js-form-submit {
+            padding: 12px 20px; } }
+
+/*# sourceMappingURL=online_order.css.map */

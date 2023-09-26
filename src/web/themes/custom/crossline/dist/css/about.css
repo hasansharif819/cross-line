@@ -1,0 +1,8 @@
+.about-page .node--type-page .node__content {
+  margin-bottom: 100px; }
+
+@media (max-width: 991px) {
+  .about-page .node--type-page .node__content {
+    margin-bottom: 50px; } }
+
+/*# sourceMappingURL=about.css.map */

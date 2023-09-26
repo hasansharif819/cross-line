@@ -1,0 +1,26 @@
+// Colors.
+//
+// All Sass color variables prefixed with $color-.
+// This makes it easy to figure out what a variable
+// is for later.
+//
+// If you need help naming colors check out:
+// http://chir.ag/projects/name-that-color/
+
+// Colors
+$white: #ffffff !default;
+$black: #000000 !default;
+$color-light-black: #171717;
+$color-blue: #22558e;
+
+$grey-darkest: #2d2d2d !default;
+$grey-dark: #a8aaac !default;
+$grey: #e5e5e5 !default;
+$grey-light: #d2d3d4 !default;
+$grey-lightest: #f7f7f7 !default;
+
+$color-title: #bb7f16;
+$color-body: #ffebc7;
+$color-tomato: #e25111;
+$color-bg: #fafafa;
+$color-light-tomato: hwb(18 49% 3%);

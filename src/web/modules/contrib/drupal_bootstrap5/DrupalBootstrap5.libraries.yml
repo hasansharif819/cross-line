@@ -1,0 +1,10 @@
+drupalbootstrap5:
+    version: 5.02
+    header: true
+    css:
+      component:
+        css/bootstrap.min.css: { preprocess: false, minified: true }
+    js:
+      js/bootstrap.min.js: { preprocess: false, minified: true }
+    dependencies:
+      - core/jquery

@@ -1,0 +1,34 @@
+// Fonts generated using:
+// https://www.fontsquirrel.com/tools/webfont-generator
+//
+// For more information on font-face and browser support visit:
+// https://css-tricks.com/snippets/css/using-font-face/
+
+// Lato Bold.
+// @font-face {
+//   font-family: 'FontName';
+//   font-style: normal;
+//   font-weight: 700;
+//   // The browser will hide the text for about 100ms and, if the font has not yet
+//   // been downloaded, will use the fallback text. It will swap to the new font
+//   // after it is downloaded, but only during a short swap period
+//   // https://css-tricks.com/almanac/properties/f/font-display/
+//   font-display: fallback;
+//   src:
+//     url('../fonts/font-name.woff2') format('woff2'),
+//     url('../fonts/font-name-lato-bold.woff') format('woff');
+// }
+
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-display: fallback;
+  src: url('../fonts/jost.ttf');
+}
+
+@font-face {
+  font-family: 'Marcellus';
+  font-style: normal;
+  font-display: fallback;
+  src: url('../fonts/marcellus.ttf');
+}

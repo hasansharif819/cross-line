@@ -1,0 +1,169 @@
+// Utilities
+//
+// Import variables and mixins
+// Should contain NO css output.
+// Only variables / mixins / settings.
+@import '../../global/utils/init';
+
+//================================
+// HEADER - Curious Plot
+//================================
+
+header {
+  left: 0;
+  position: absolute;
+  width: 100%;
+  transition: 0.7s;
+  z-index: 100;
+
+  .navbar-toggler {
+    border: 0;
+    padding: 0;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    .navbar-toggler-icon {
+      color: $color-tomato;
+      background-image: none;
+      font-family: var(--font-fontawesome);
+      font-size: 36px;
+      font-style: inherit;
+      font-weight: 600;
+      height: auto;
+
+      &::before {
+        content: '\f00d';
+      }
+    }
+
+    &.collapsed {
+
+      .navbar-toggler-icon {
+
+        &::before {
+          content: '\f0c9';
+        }
+      }
+    }
+  }
+
+  .navbar-nav {
+
+    li {
+
+      a {
+        color: $white;
+        padding: 0 !important;
+        margin-right: 30px;
+  
+        &::after {
+          content: '';
+          display: block;
+          width: 0%;
+          height: 2px;
+          background: $color-tomato;
+          transition: width 0.5s;
+          margin-top: 5px;
+        }
+  
+        &:hover {
+          color: $color-tomato;
+  
+          &::after {
+            width: 100%;
+          }
+        }
+
+        &:focus {
+          color: $color-tomato;
+        }
+      }
+
+      .is-active {
+        color: $color-tomato !important;
+      }
+    }
+  }
+}
+
+.sticky-header {
+  background: $white;
+  box-shadow: 0 15px 18px -3px rgba(0, 0, 0, 0.1);
+  min-height: 90px;
+  position: fixed;
+
+  .navbar-nav {
+
+    li {
+
+      a {
+        color: $black;
+
+        &:hover {
+          color: $black;
+        }
+      }
+
+      .is-active {
+        color: $color-tomato !important;
+      }
+    }
+  }
+}
+
+@include lg {
+
+  header {
+    background: var(--color-white);
+    box-shadow: 0 15px 18px -3px rgba(0, 0, 0, 0.1);
+
+    .navbar-nav {
+      border-top: 1px solid var(--color-radical-red);
+      margin-top: 15px;
+      padding: 15px 0;
+
+      .nav-item {
+        padding: 10px 0;
+
+        .nav-link {
+          color: var(--color-black);
+
+          &::before {
+            display: none;
+          }
+        }
+
+        .dropdown-menu {
+          box-shadow: none;
+          // display: block;
+          padding: 0;
+
+          > .nav-item {
+            padding: 2px 0;
+          }
+        }
+      }
+    }
+
+    &.sticky-header {
+      min-height: unset;
+      top: 0 !important;
+    }
+  }
+}
+
+@include md {
+  
+  header {
+
+    .navbar-brand {
+
+      img {
+        height: 36px;
+      }
+    }
+  }
+}
+

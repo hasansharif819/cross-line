@@ -1,0 +1,82 @@
+#block-tengritag-argentiniansteakhouse {
+  background-attachment: fixed;
+  background-image: url("/themes/custom/tengritag/images/burger-cheese-tomato.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  margin-bottom: 100px;
+  min-height: 600px;
+  position: relative; }
+  #block-tengritag-argentiniansteakhouse .argentenian-block {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    #block-tengritag-argentiniansteakhouse .argentenian-block h2 {
+      font-size: 54px;
+      line-height: 50px;
+      text-align: center; }
+    #block-tengritag-argentiniansteakhouse .argentenian-block .field--name-body {
+      color: #ffebc7;
+      line-height: 36px;
+      margin: 20px 0;
+      text-align: center; }
+    #block-tengritag-argentiniansteakhouse .argentenian-block .field--name-field-link {
+      text-align: center; }
+      #block-tengritag-argentiniansteakhouse .argentenian-block .field--name-field-link a {
+        border: 2px solid #bb7f16;
+        border-radius: 4px;
+        color: #bb7f16;
+        display: inline-block;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 12px 40px;
+        text-transform: uppercase;
+        transition: 0.4s; }
+        #block-tengritag-argentiniansteakhouse .argentenian-block .field--name-field-link a:hover {
+          background-color: #ffffff;
+          color: #000000; }
+  #block-tengritag-argentiniansteakhouse::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0; }
+
+@media (max-width: 991px) {
+  #block-tengritag-argentiniansteakhouse {
+    margin-bottom: 50px;
+    min-height: 500px; }
+    #block-tengritag-argentiniansteakhouse .argentenian-block h2 {
+      font-size: 36px;
+      line-height: 36px; }
+    #block-tengritag-argentiniansteakhouse .argentenian-block .field--name-field-link a {
+      padding: 12px 20px; } }
+
+@media (max-width: 767px) {
+  #block-tengritag-argentiniansteakhouse .argentenian-block {
+    width: 100%;
+    padding: 15px;
+    align-items: flex-start; }
+    #block-tengritag-argentiniansteakhouse .argentenian-block h2 {
+      margin-bottom: 0;
+      text-align: left; }
+    #block-tengritag-argentiniansteakhouse .argentenian-block .field--name-body {
+      text-align: left; }
+    #block-tengritag-argentiniansteakhouse .argentenian-block .field--name-field-link {
+      text-align: left; }
+      #block-tengritag-argentiniansteakhouse .argentenian-block .field--name-field-link a {
+        padding: 10px 20px; } }
+
+/*# sourceMappingURL=argentiniansteakhouse.css.map */

@@ -1,0 +1,120 @@
+// Box shadow
+@mixin header-shadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+//============================================
+// Placeholder
+//============================================
+@mixin placeholder-styles {
+
+  // Firefox 18
+  &:-moz-placeholder {
+    @content;
+  }
+
+  // Firefox 19+			
+  &::-moz-placeholder {
+    @content;
+  }
+
+  // Internet Explorer 10+			
+  &:-ms-input-placeholder {
+    @content;
+  }
+
+  // Edge			
+  &::-ms-input-placeholder {
+    @content;
+  }
+
+  // Safari and Chrome
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  // Modern
+  &::placeholder {
+    @content;
+  }
+}
+
+
+//============================================
+// Unicode character
+//============================================
+@function unicode($str) {
+  @return unquote("\"") + $str + unquote("\"");
+}
+
+
+
+
+//============================================
+// Linear Interpolation
+//============================================
+@function lerp($a, $b, $p) {
+  @return $a (+$p * ($b - $a));
+}
+
+
+//============================================
+// Illustrator tracking to ems
+//============================================
+@function tracking($target ) {
+  @return ($target / 1000) * 1em;
+}
+
+
+
+//============================================
+// Illustrator tracking to ems
+//============================================
+@function px2rem($px ) {
+  @return #{$px/16}rem;
+}
+
+
+//============================================
+// Width To Right Edge
+//============================================
+
+@function widthToRightEdge($breakPoint, $columns) {
+
+  $width: 100px;
+
+  @if $breakPoint =='xs' {
+    $width: calc(100vw - (100vw * #{ (($grid-columns - $columns) / $grid-columns) }) - #{$grid-gutter-width/2});
+  }
+
+  @else {
+    $col-width: (($columns / $grid-columns ) * map-get($container-max-widths, $breakPoint)) - $grid-gutter-width;
+    $width: calc(((100vw - #{( map-get($container-max-widths, $breakPoint ) - $grid-gutter-width)})/2) + #{$col-width});
+  }
+
+  @return $width;
+}
+
+
+//============================================
+// Width To Left Edge
+//============================================
+
+@function widthToLeftEdge($breakPoint, $columns) {
+
+  $width: 100px;
+
+  @if $breakPoint =='xs' {
+    $width: calc(100vw - (100vw * #{ (($grid-columns - $columns) / $grid-columns) }) - #{$grid-gutter-width/2});
+  }
+
+  @else {
+    $col-width: (($columns / $grid-columns ) * map-get($container-max-widths, $breakPoint)) - $grid-gutter-width;
+    $width: calc(((100vw - #{( map-get($container-max-widths, $breakPoint ) - $grid-gutter-width)})/2) + #{$col-width});
+  }
+
+  @return $width;
+}
+
