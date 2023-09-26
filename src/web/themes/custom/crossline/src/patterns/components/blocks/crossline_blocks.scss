@@ -1,0 +1,128 @@
+// Utilities
+//
+// Import variables and mixins
+// Should contain NO css output.
+// Only variables / mixins / settings.
+@import '../../global/utils/init';
+
+#block-crossline-crossline {
+  background-attachment: fixed;
+  background-image: url('/themes/custom/tengritag/images/burger-cheese-tomato.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+  margin-bottom: 100px;
+  min-height: 600px;
+  position: relative;
+
+  .crossline-block {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    h2 {
+      font-size: 54px;
+      line-height: 50px;
+      text-align: center;
+    }
+
+    & .field--name-body {
+      color: $color-body;
+      line-height: 36px;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    & .field--name-field-link {
+      text-align: center;
+      
+      a {
+        border: 2px solid $color-title;
+        border-radius: 4px;
+        color: $color-title;
+        display: inline-block;
+        font-family: $font-jost;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 12px 40px;
+        text-transform: uppercase;
+        transition: 0.4s;
+
+        &:hover {
+          background-color: $white;
+          color: $black;
+        }
+      }
+    }
+  }
+
+  &::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+}
+
+@include lg {
+
+  #block-crossline-crossline {
+    margin-bottom: 50px;
+    min-height: 500px;
+
+    .crossline-block {
+      
+      h2 {
+        font-size: 36px;
+        line-height: 36px;
+      }
+
+      & .field--name-field-link {
+        
+        a {
+          padding: 12px 20px;
+        }
+      }
+    }
+  }
+}
+
+@include md {
+
+  #block-crossline-crossline {
+
+    .crossline-block {
+      width: 100%;
+      padding: 15px;
+      align-items: flex-start;
+      
+      h2 {
+        margin-bottom: 0;
+        text-align: left;
+      }
+
+      & .field--name-body {
+        text-align: left;
+      }
+
+      & .field--name-field-link {
+        text-align: left;
+        
+        a {
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}
