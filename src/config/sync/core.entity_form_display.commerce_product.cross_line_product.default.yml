@@ -1,0 +1,122 @@
+uuid: 343cd852-313e-4bc3-b9d2-2b6e281a3485
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.cross_line_product
+    - field.field.commerce_product.cross_line_product.body
+    - field.field.commerce_product.cross_line_product.field_category
+    - field.field.commerce_product.cross_line_product.field_price
+    - field.field.commerce_product.cross_line_product.field_product_image
+    - field.field.commerce_product.cross_line_product.field_size
+    - image.style.thumbnail
+  module:
+    - commerce
+    - commerce_price
+    - commerce_product
+    - image
+    - path
+    - text
+id: commerce_product.cross_line_product.default
+targetEntityType: commerce_product
+bundle: cross_line_product
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_category:
+    type: entity_reference_autocomplete
+    weight: 93
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_price:
+    type: commerce_price_default
+    weight: 92
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_product_image:
+    type: image_image
+    weight: 91
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_size:
+    type: entity_reference_autocomplete
+    weight: 94
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 90
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  stores:
+    type: commerce_entity_select
+    weight: -10
+    region: content
+    settings:
+      hide_single_entity: true
+      autocomplete_threshold: 7
+      autocomplete_size: 60
+      autocomplete_placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  variations:
+    type: commerce_product_single_variation
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

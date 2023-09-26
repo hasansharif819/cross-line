@@ -1,0 +1,14 @@
+uuid: bd4bb920-d411-491f-82f6-77425a617f91
+langcode: en
+status: true
+dependencies: {  }
+id: cross_line_product
+label: 'Cross Line Product'
+traits: {  }
+locked: false
+description: ''
+variationType: cross_line_product
+variationTypes:
+  - cross_line_product
+multipleVariations: false
+injectVariationFields: true

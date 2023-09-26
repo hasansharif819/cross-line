@@ -1,0 +1,29 @@
+uuid: 6aee04ee-7ef2-4377-9662-5f24610fdc37
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.cross_line_product
+    - field.storage.commerce_product.field_size
+    - taxonomy.vocabulary.size
+id: commerce_product.cross_line_product.field_size
+field_name: field_size
+entity_type: commerce_product
+bundle: cross_line_product
+label: Size
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      size: size
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

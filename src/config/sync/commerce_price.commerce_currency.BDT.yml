@@ -1,0 +1,9 @@
+uuid: 16f497c6-8bb7-4d5f-a845-bcd4b82302ec
+langcode: en
+status: true
+dependencies: {  }
+currencyCode: BDT
+name: 'Bangladeshi Taka'
+numericCode: '050'
+symbol: BDT
+fractionDigits: 2

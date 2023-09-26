@@ -1,0 +1,10 @@
+uuid: 5b8b2a66-675e-44e2-929f-5f04f32d35d7
+langcode: en
+status: true
+dependencies: {  }
+id: cross_line_product
+label: 'Cross Line Product'
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: null
