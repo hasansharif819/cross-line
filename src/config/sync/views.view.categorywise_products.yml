@@ -335,8 +335,8 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: More
-          output_url_as_text: false
+          text: view
+          output_url_as_text: true
           absolute: false
         nothing:
           id: nothing
@@ -350,7 +350,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<a href=\"{{ view_node }}\" class=\"products-style\">\r\n<div class=\"products-image\">{{ field_product_image }}</div>\r\n<div class=\"details-wrapper\">\r\n<h4>{{ title }}</h4>\r\n<p>{{ field_category }}</p>\r\n<p>{{ field_product_code }}</p>\r\n</div>\r\n</a>"
+            text: "<a href=\"{{ view_commerce_product }}\" class=\"products-style\">\r\n<div class=\"products-image\">{{ field_product_image }}</div>\r\n<div class=\"details-wrapper\">\r\n<h4>{{ title }}</h4>\r\n<p>{{ field_category }}</p>\r\n<p>{{ field_product_code }}</p>\r\n</div>\r\n</a>"
             make_link: false
             path: ''
             absolute: false
