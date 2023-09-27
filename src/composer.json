@@ -24,8 +24,10 @@
         "drupal/core-project-message": "^10.1",
         "drupal/core-recommended": "^10.1",
         "drupal/drupal_bootstrap5": "^1.0",
+        "drupal/fontawesome": "^2.26",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/owlcarousel": "^3.0",
+        "drupal/twig_tweak": "^3.2",
         "drupal/webform": "^6.2@beta",
         "drush/drush": "^12.2"
     },

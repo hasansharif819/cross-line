@@ -14,6 +14,7 @@ dependencies:
     - contact
     - file
     - filter
+    - fontawesome
     - search
     - shortcut
     - system
@@ -27,6 +28,7 @@ permissions:
   - 'access checkout'
   - 'access comments'
   - 'access content'
+  - 'access fontawesome additional settings'
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'delete own files'
