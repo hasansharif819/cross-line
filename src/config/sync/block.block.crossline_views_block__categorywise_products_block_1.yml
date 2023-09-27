@@ -5,10 +5,14 @@ dependencies:
   config:
     - views.view.categorywise_products
   module:
+    - block_classes
     - system
     - views
   theme:
     - crossline
+third_party_settings:
+  block_classes:
+    block_class: 'container categorywise-menu'
 id: crossline_views_block__categorywise_products_block_1
 theme: crossline
 region: content
