@@ -1,0 +1,19 @@
+uuid: 860280a4-5d2f-47df-a6c1-ad082dc30490
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_quote
+    - node.type.testinomial
+id: node.testinomial.field_quote
+field_name: field_quote
+entity_type: node
+bundle: testinomial
+label: Quote
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

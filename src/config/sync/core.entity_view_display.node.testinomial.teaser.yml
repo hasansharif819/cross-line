@@ -1,0 +1,22 @@
+uuid: 98647774-456a-46ad-9d34-6bbaa3e98f1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.testinomial.field_quote
+    - node.type.testinomial
+  module:
+    - user
+id: node.testinomial.teaser
+targetEntityType: node
+bundle: testinomial
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_quote: true

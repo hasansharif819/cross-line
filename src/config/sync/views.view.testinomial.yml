@@ -1,20 +1,16 @@
-uuid: a1b3c4c0-49a3-4d92-82e8-cab7e0169d62
+uuid: 9b202a4f-3b53-411c-b28a-0a7dc7c2b03c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.body
-    - field.storage.node.field_slider_image
-    - image.style.slider_image
-    - node.type.slider
+    - field.storage.node.field_quote
+    - node.type.testinomial
   module:
-    - image
     - node
     - owlcarousel
-    - text
     - user
-id: slider
-label: Slider
+id: testinomial
+label: Testinomial
 module: views
 description: ''
 tag: ''
@@ -27,74 +23,8 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Slider
+      title: Testinomial
       fields:
-        field_slider_image:
-          id: field_slider_image
-          table: node__field_slider_image
-          field: field_slider_image
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
-          settings:
-            image_link: ''
-            image_style: slider_image
-            image_loading:
-              attribute: lazy
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
         title:
           id: title
           table: node_field_data
@@ -158,10 +88,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        body:
-          id: body
-          table: node__body
-          field: body
+        field_quote:
+          id: field_quote
+          table: node__field_quote
+          field: field_quote
           relationship: none
           group_type: group
           admin_label: ''
@@ -208,8 +138,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
-          settings: {  }
+          type: string
+          settings:
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -220,59 +151,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        view_node:
-          id: view_node
-          table: node
-          field: view_node
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          plugin_id: entity_link
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          text: More
-          output_url_as_text: false
-          absolute: false
         nothing:
           id: nothing
           table: views
@@ -285,7 +163,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"slider-item-wrapper\">\r\n    <div class=\"slider-image\">{{ field_slider_image }}</div>\r\n    <div class=\"container\">\r\n        <div class=\"slider-body\">\r\n            <div class=\"title\">{{ title }}</div>\r\n            <div class=\"sub-head\">{{ field_slider_sub_head }}</div>\r\n            <div class=\"body\">{{ body }}</div>\r\n            <div class=\"readmore\"><a href='/menus'>More</a></div>\r\n        </div>\r\n   </div>\r\n</div>"
+            text: "<div class=\"testimonial-wrapper\">\r\n<div class=\"testimonial-quote\">\r\n<h4>{{ field_quote }}</h4>\r\n</div>\r\n<div class=\"testimonial-author\">\r\n<p>{{ title }}</p>\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -326,7 +204,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 5
+          items_per_page: 12
       exposed_form:
         type: basic
         options:
@@ -383,7 +261,7 @@ display:
           entity_field: type
           plugin_id: bundle
           value:
-            slider: slider
+            testinomial: testinomial
       style:
         type: owlcarousel
         options:
@@ -396,7 +274,7 @@ display:
           autoplay: 1
           autoplayHoverPause: 0
           loop: 1
-          dots: 0
+          dots: 1
           dimensionMobile: '0'
           itemsMobile: '1'
           dimensionDesktop: '0'
@@ -412,7 +290,20 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<h2>Our Happy Customers</h2>'
+            format: basic_html
+          tokenize: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -423,8 +314,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_slider_image'
+        - 'config:field.storage.node.field_quote'
   block_1:
     id: block_1
     display_title: Block
@@ -440,5 +330,4 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_slider_image'
+        - 'config:field.storage.node.field_quote'

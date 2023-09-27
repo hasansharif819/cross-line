@@ -1,0 +1,28 @@
+uuid: 292277d5-856c-46b7-b16b-0514a91f6e42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.testinomial.field_quote
+    - node.type.testinomial
+  module:
+    - user
+id: node.testinomial.default
+targetEntityType: node
+bundle: testinomial
+mode: default
+content:
+  field_quote:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

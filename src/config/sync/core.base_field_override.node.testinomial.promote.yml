@@ -1,0 +1,22 @@
+uuid: 2ddf3e8e-1f6b-4090-a04c-89e92a095c48
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.testinomial
+id: node.testinomial.promote
+field_name: promote
+entity_type: node
+bundle: testinomial
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,33 @@
+uuid: 4ff24e79-7f64-4d0b-8b5f-36a626078afd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.testinomial
+  module:
+    - block_classes
+    - system
+    - views
+  theme:
+    - crossline
+third_party_settings:
+  block_classes:
+    block_class: container
+id: crossline_views_block__testinomial_block_1
+theme: crossline
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:testinomial-block_1'
+settings:
+  id: 'views_block:testinomial-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

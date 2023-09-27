@@ -12,7 +12,7 @@ dependencies:
     - crossline
 third_party_settings:
   block_classes:
-    block_class: argentenian-block
+    block_class: crossline-block
 id: crossline_crossline
 theme: crossline
 region: content
