@@ -1,22 +1,22 @@
-uuid: 1496ce11-b749-4ec5-b55c-1032bf1c38c7
+uuid: d910264a-cac5-4c20-a5f5-a00fd81f0cc4
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.slider
+    - views.view.categorywise_products
   module:
     - system
     - views
   theme:
     - crossline
-id: crossline_views_block__slider_block_1
+id: crossline_views_block__categorywise_products_block_1
 theme: crossline
 region: content
-weight: -8
+weight: -7
 provider: null
-plugin: 'views_block:slider-block_1'
+plugin: 'views_block:categorywise_products-block_1'
 settings:
-  id: 'views_block:slider-block_1'
+  id: 'views_block:categorywise_products-block_1'
   label: ''
   label_display: '0'
   provider: views

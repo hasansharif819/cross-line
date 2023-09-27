@@ -1,19 +1,19 @@
-uuid: 1751ccd5-b5d2-495e-a7f6-5ba1f8d32c17
+uuid: fc53344b-02de-47dd-9c6b-08a00ff99d21
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - commerce_product.commerce_product_type.cross_line_product
     - field.storage.commerce_product.field_category
+    - field.storage.commerce_product.field_product_code
     - field.storage.commerce_product.field_product_image
     - image.style.product_image
   module:
     - commerce
     - commerce_product
     - image
-    - owlcarousel
-id: products
-label: Products
+id: categorywise_products
+label: 'Categorywise Products'
 module: views
 description: ''
 tag: ''
@@ -26,7 +26,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Products
+      title: 'Categorywise Products'
       fields:
         title:
           id: title
@@ -37,6 +37,132 @@ display:
           admin_label: ''
           entity_type: null
           entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_category:
+          id: field_category
+          table: commerce_product__field_category
+          field: field_category
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_product_code:
+          id: field_product_code
+          table: commerce_product__field_product_code
+          field: field_product_code
+          relationship: none
+          group_type: group
+          admin_label: ''
           plugin_id: field
           label: ''
           exclude: true
@@ -159,69 +285,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_category:
-          id: field_category
-          table: commerce_product__field_category
-          field: field_category
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: true
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
         view_commerce_product:
           id: view_commerce_product
           table: commerce_product
@@ -272,7 +335,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          text: Details
+          text: More
           output_url_as_text: false
           absolute: false
         nothing:
@@ -287,7 +350,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"product-wrapper\">\r\n<div class=\"product-image\">{{ field_product_image }}</div>\r\n<div class=\"product-title\">\r\n<h3>{{ title }}</h3>\r\n</div>\r\n<div class=\"product-type\">{{ field_category }}</div>\r\n<div class=\"product-price\">${{ field_price }}</div>\r\n</div>"
+            text: "<a href=\"{{ view_node }}\" class=\"products-style\">\r\n<div class=\"products-image\">{{ field_product_image }}</div>\r\n<div class=\"details-wrapper\">\r\n<h4>{{ title }}</h4>\r\n<p>{{ field_category }}</p>\r\n<p>{{ field_product_code }}</p>\r\n</div>\r\n</a>"
             make_link: false
             path: ''
             absolute: false
@@ -325,26 +388,10 @@ display:
           empty_zero: false
           hide_alter_empty: false
       pager:
-        type: full
+        type: some
         options:
           offset: 0
-          items_per_page: 5
-          total_pages: null
-          id: 0
-          tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 9
+          items_per_page: 12
       exposed_form:
         type: basic
         options:
@@ -386,22 +433,15 @@ display:
           value:
             cross_line_product: cross_line_product
       style:
-        type: owlcarousel
+        type: default
         options:
-          grouping: {  }
+          grouping:
+            -
+              field: field_category
+              rendered: true
+              rendered_strip: false
           row_class: ''
           default_row_class: true
-          items: '3'
-          margin: '0'
-          nav: 0
-          autoplay: 1
-          autoplayHoverPause: 0
-          loop: 0
-          dots: 1
-          dimensionMobile: '300'
-          itemsMobile: '1'
-          dimensionDesktop: '991'
-          itemsDesktop: '3'
       row:
         type: fields
       query:
@@ -421,9 +461,9 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
       tags:
         - 'config:field.storage.commerce_product.field_category'
+        - 'config:field.storage.commerce_product.field_product_code'
         - 'config:field.storage.commerce_product.field_product_image'
   block_1:
     id: block_1
@@ -437,7 +477,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
       tags:
         - 'config:field.storage.commerce_product.field_category'
+        - 'config:field.storage.commerce_product.field_product_code'
         - 'config:field.storage.commerce_product.field_product_image'

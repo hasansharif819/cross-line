@@ -6,11 +6,10 @@ dependencies:
     - commerce_product.commerce_product_type.cross_line_product
     - field.field.commerce_product.cross_line_product.body
     - field.field.commerce_product.cross_line_product.field_category
-    - field.field.commerce_product.cross_line_product.field_price
+    - field.field.commerce_product.cross_line_product.field_product_code
     - field.field.commerce_product.cross_line_product.field_product_image
     - field.field.commerce_product.cross_line_product.field_size
   module:
-    - commerce_price
     - commerce_product
     - image
     - text
@@ -28,20 +27,19 @@ content:
     region: content
   field_category:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
     weight: 14
     region: content
-  field_price:
-    type: commerce_price_default
-    label: above
+  field_product_code:
+    type: string
+    label: inline
     settings:
-      strip_trailing_zeroes: false
-      currency_display: symbol
+      link_to_entity: false
     third_party_settings: {  }
-    weight: 13
+    weight: 16
     region: content
   field_product_image:
     type: image
@@ -56,7 +54,7 @@ content:
     region: content
   field_size:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
