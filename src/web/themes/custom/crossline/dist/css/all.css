@@ -516,7 +516,7 @@ header {
       position: relative; }
       .view-categorywise-products .view-content .views-row .product-content .product-wrapper .title {
         font-family: var(--font-poppins);
-        color: var(--color-dodger-blue);
+        color: #e25111;
         font-size: 20px;
         margin-bottom: 20px;
         transition: all 0.4s linear; }
@@ -527,7 +527,7 @@ header {
       .view-categorywise-products .view-content .views-row .product-content .product-wrapper .read-more {
         align-items: center;
         bottom: 23px;
-        color: var(--color-dodger-blue);
+        color: #e25111;
         display: flex;
         font-family: var(--font-poppins-light);
         font-weight: 600;
@@ -547,11 +547,8 @@ header {
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
       transition: 0.7s; }
-    .view-categorywise-products .view-content .views-row:hover .product-wrapper .title {
-      color: var(--color-radical-red); }
     .view-categorywise-products .view-content .views-row:hover .product-wrapper .read-more {
-      border-radius: 4px;
-      color: var(--color-radical-red); }
+      border-radius: 4px; }
       .view-categorywise-products .view-content .views-row:hover .product-wrapper .read-more::after {
         padding-left: 20px; }
 
@@ -578,10 +575,60 @@ header {
     padding: 0 30px;
     margin: 0 30px; }
     .path-product .training-details-container .body-content .field--name-title {
+      color: #e25111;
       font-size: 40px;
       font-family: var(--font-manrope);
-      font-weight: 700;
+      font-weight: 700; }
+    .path-product .training-details-container .body-content .field--name-field-product-code {
+      color: #e25111;
+      font-size: 24px;
+      font-family: var(--font-manrope);
+      font-weight: 600;
       margin-bottom: 30px; }
+    .path-product .training-details-container .body-content .field--name-field-category {
+      font-size: 18px; }
+      .path-product .training-details-container .body-content .field--name-field-category a {
+        color: #000000; }
+    .path-product .training-details-container .body-content .field--name-field-size {
+      font-size: 18px; }
+      .path-product .training-details-container .body-content .field--name-field-size .field__items {
+        display: flex;
+        gap: 20px; }
+        .path-product .training-details-container .body-content .field--name-field-size .field__items a {
+          color: #000000; }
+    .path-product .training-details-container .body-content .field--name-price {
+      display: flex;
+      gap: 20px;
+      font-size: 18px; }
+    .path-product .training-details-container .body-content .field--name-body p {
+      font-size: 18px; }
+      .path-product .training-details-container .body-content .field--name-body p:first-child::before {
+        content: "Description: ";
+        font-size: 18px;
+        font-weight: bold; }
+    .path-product .training-details-container .body-content .button-wrapper {
+      margin-top: 30px; }
+      .path-product .training-details-container .body-content .button-wrapper .add-to-cart-button {
+        border: 0;
+        padding: 0; }
+        .path-product .training-details-container .body-content .button-wrapper .add-to-cart-button .form-actions {
+          margin: 0; }
+          .path-product .training-details-container .body-content .button-wrapper .add-to-cart-button .form-actions .button--add-to-cart {
+            font-size: 18px;
+            background-color: #e25111;
+            border: none;
+            padding: 10px 20px;
+            font-weight: 500;
+            text-transform: uppercase; }
+            .path-product .training-details-container .body-content .button-wrapper .add-to-cart-button .form-actions .button--add-to-cart:hover {
+              color: #000000; }
+      .path-product .training-details-container .body-content .button-wrapper .training-btn {
+        background-color: #e25111;
+        color: #ffffff;
+        padding: 11px 20px;
+        font-weight: 500; }
+        .path-product .training-details-container .body-content .button-wrapper .training-btn:hover {
+          background-color: #e25111; }
     .path-product .training-details-container .body-content li {
       font-size: 16px; }
     .path-product .training-details-container .body-content .duration {
@@ -671,9 +718,9 @@ header {
             color: var(--color-blue-zodiac); }
 
 @media (max-width: 991px) {
-  .view-training {
+  .view-categorywise-products {
     margin: 0 0 50px; }
-    .view-training .view-content {
+    .view-categorywise-products .view-content .categorywise-products-wrapper {
       grid-template-columns: repeat(2, 1fr); }
   .path-product .training-details-container {
     flex-direction: column;
@@ -687,7 +734,7 @@ header {
         font-size: 32px; } }
 
 @media (max-width: 767px) {
-  .view-training .view-content {
+  .view-categorywise-products .view-content .categorywise-products-wrapper {
     grid-template-columns: repeat(1, 1fr); }
   .path-product .training-details-container .body-content .field--name-title {
     font-size: 26px; } }

@@ -41,49 +41,43 @@
     <div class="body-content">
         {{ product.title }}
         {{ product.field_product_code	}}
-        {{ product.body }}
         {{ product.field_category}}
         {{ product.field_size }}
         <div class="product-price">
         {{ product.variation_list_price }}
         {{ product.variation_price }}
         </div>
+        {{ product.body }}
         
-        <div>
-          <button type="button" class="btn add-to-cart-button">
-            {{ product.variations }}
-          </button>
-          {# <a href="/">
-          <button type="button" class="btn buy-now-button">
-            Buy Now
-          </button></a> #}
-
-          <div>
-              {# <a href="/form/course-enquiry-form" class="webform-dialog webform-dialog-narrow button modal-btn">EnQuiry</a> #}
-              <button type="button" class="btn btn-primary modal-btn training-btn" id="{{product_entity.product_id.value}}" data-bs-toggle="modal" data-bs-target="#trainingModal">
-                Buy Now
-              </button>
+        <div class="button-wrapper">
+            <button type="button" class="btn add-to-cart-button">
+              {{ product.variations }}
+            </button>
+            {# <a href="/form/course-enquiry-form" class="webform-dialog webform-dialog-narrow button modal-btn">EnQuiry</a> #}
+            <button type="button" class="btn btn-primary modal-btn training-btn" id="{{product_entity.product_id.value}}" data-bs-toggle="modal" data-bs-target="#trainingModal">
+              Buy Now
+            </button>
 
 
-              <!-- Modal -->
-              <div class="modal fade" id="trainingModal" tabindex="-1" aria-labelledby="trainingModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="trainingModalLabel">Course Enquiry Form</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      
-                    </div>
+            <!-- Modal -->
+            <div class="modal fade" id="trainingModal" tabindex="-1" aria-labelledby="trainingModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="trainingModalLabel">Pay using Bkash/Rocket/Nogod</h5>
+                    <p class="modal-title" id="trainingModalLabel">Personal A/C: 01640911511</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
 
 
         </div>
-    </div>
   </div>
 </article>

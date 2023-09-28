@@ -42,7 +42,7 @@
 
           .title {
             font-family: var(--font-poppins);
-            color: var(--color-dodger-blue);
+            color: $color-tomato;
             font-size: 20px;
             margin-bottom: 20px;
             transition: all 0.4s linear;
@@ -57,7 +57,7 @@
           .read-more {
             align-items: center;
             bottom: 23px;
-            color: var(--color-dodger-blue);
+            color: $color-tomato;
             display: flex;
             font-family: var(--font-poppins-light);
             font-weight: 600;
@@ -88,13 +88,8 @@
 
         .product-wrapper {
 
-          .title {
-            color: var(--color-radical-red);
-          }
-
           .read-more {
             border-radius: 4px;
-            color: var(--color-radical-red);
 
             &::after {
               padding-left: 20px;
@@ -140,15 +135,99 @@
       margin: 0 30px;
 
       .field--name-title {
+        color: $color-tomato;
         font-size: 40px;
         font-family: var(--font-manrope);
         font-weight: 700;
+      }
+
+      .field--name-field-product-code {
+        color: $color-tomato;
+        font-size: 24px;
+        font-family: var(--font-manrope);
+        font-weight: 600;
         margin-bottom: 30px;
       }
 
-      // .field--name-body {
-      //   margin-bottom: 50px;
-      // }
+      .field--name-field-category {
+        font-size: 18px;
+
+        a {
+          color: $black;
+        }
+      }
+
+      .field--name-field-size {
+        font-size: 18px;
+
+        .field__items {
+          display: flex;
+          gap: 20px;
+
+          a {
+            color: $black;
+          }
+        }
+      }
+
+      .field--name-price {
+        display: flex;
+        gap: 20px;
+        font-size: 18px;
+      }
+
+      .field--name-body {
+
+        p {
+          font-size: 18px;
+
+          &:first-child {
+
+            &::before {
+              content: "Description: ";
+              font-size: 18px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .button-wrapper {
+        margin-top: 30px;
+
+        .add-to-cart-button {
+          border: 0;
+          padding: 0;
+
+          .form-actions {
+            margin: 0;
+
+            .button--add-to-cart {
+              font-size: 18px;
+              background-color: $color-tomato;
+              border: none;
+              padding: 10px 20px;
+              font-weight: 500;
+              text-transform: uppercase;
+
+              &:hover {
+                color: $black;
+              }
+            }
+          }
+        }
+
+        .training-btn {
+          background-color: $color-tomato;
+          color: $white;
+          padding: 11px 20px;
+          font-weight: 500;
+
+          &:hover {
+            background-color: $color-tomato;
+          }
+        }
+      }
 
       li {
         font-size: 16px;
@@ -273,11 +352,14 @@
 //responsive design
 @include lg {
 
-  .view-training {
+  .view-categorywise-products {
     margin: 0 0 50px;
 
     .view-content {
-      grid-template-columns: repeat(2, 1fr);
+
+      .categorywise-products-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
 
@@ -308,10 +390,13 @@
 
 @include md {
 
-  .view-training {
+  .view-categorywise-products {
 
     .view-content {
-      grid-template-columns: repeat(1, 1fr);
+      
+      .categorywise-products-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
   }
 

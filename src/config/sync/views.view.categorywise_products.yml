@@ -415,7 +415,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<a href=\"{{ view_commerce_product }}\" data-aos=\"fade-up\">\r\n\t<div class=\"product-content\">\r\n\t\t<div class=\"product-content-image\">\r\n\t\t\t{{ field_product_image }}\r\n\t\t</div>\r\n\t\t<div class=\"product-wrapper\">\r\n\t\t\t<div class=\"title\">{{ title }} </div>\r\n                        <div class=\"category\">{{ field_category }}</div>\r\n\t\t\t<div class=\"body\">{{ body }} </div>\r\n\t\t\t<div class=\"read-more\">Read More</div>\r\n\t\t</div>\r\n\t</div>\r\n</a>\r\n"
+            text: "<a href=\"{{ view_commerce_product }}\" data-aos=\"fade-up\">\r\n\t<div class=\"product-content\">\r\n\t\t<div class=\"product-content-image\">\r\n\t\t\t{{ field_product_image }}\r\n\t\t</div>\r\n\t\t<div class=\"product-wrapper\">\r\n\t\t\t<div class=\"title\">{{ title }} </div>\r\n\t\t\t<div class=\"body\">{{ body }} </div>\r\n\t\t\t<div class=\"read-more\">Read More</div>\r\n\t\t</div>\r\n\t</div>\r\n</a>\r\n"
             make_link: false
             path: ''
             absolute: false
@@ -453,10 +453,9 @@ display:
           empty_zero: false
           hide_alter_empty: false
       pager:
-        type: some
+        type: none
         options:
           offset: 0
-          items_per_page: 12
       exposed_form:
         type: basic
         options:

@@ -1,6 +1,6 @@
 uuid: a9b045ff-31dd-4e08-901a-33a677191aa7
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - crossline
@@ -9,7 +9,7 @@ _core:
 id: crossline_page_title
 theme: crossline
 region: content
-weight: -9
+weight: -1
 provider: null
 plugin: page_title_block
 settings:

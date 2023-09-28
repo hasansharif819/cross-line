@@ -16,7 +16,7 @@ third_party_settings:
 id: crossline_crossline
 theme: crossline
 region: content
-weight: -6
+weight: -7
 provider: null
 plugin: 'block_content:2104c8f5-9201-40df-b53f-4264725dbe83'
 settings:
