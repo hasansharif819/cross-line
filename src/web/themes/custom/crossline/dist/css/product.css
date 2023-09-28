@@ -120,18 +120,26 @@
           .path-product .training-details-container .body-content .button-wrapper .add-to-cart-button .form-actions .button--add-to-cart {
             font-size: 18px;
             background-color: #e25111;
+            border-radius: 20px;
             border: none;
             padding: 10px 20px;
             font-weight: 500;
             text-transform: uppercase; }
             .path-product .training-details-container .body-content .button-wrapper .add-to-cart-button .form-actions .button--add-to-cart:hover {
               color: #000000; }
-      .path-product .training-details-container .body-content .button-wrapper .training-btn {
+      .path-product .training-details-container .body-content .button-wrapper .buy-now-button {
+        border: none;
         background-color: #e25111;
         color: #ffffff;
         padding: 11px 20px;
-        font-weight: 500; }
-        .path-product .training-details-container .body-content .button-wrapper .training-btn:hover {
+        font-weight: 500;
+        border-radius: 20px; }
+        .path-product .training-details-container .body-content .button-wrapper .buy-now-button a {
+          color: #ffffff;
+          font-weight: 500;
+          font-size: 18px;
+          text-transform: uppercase; }
+        .path-product .training-details-container .body-content .button-wrapper .buy-now-button:hover {
           background-color: #e25111; }
     .path-product .training-details-container .body-content li {
       font-size: 16px; }

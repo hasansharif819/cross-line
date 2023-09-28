@@ -1,0 +1,128 @@
+// Utilities
+//
+// Import variables and mixins
+// Should contain NO css output.
+// Only variables / mixins / settings.
+@import '../../global/utils/init';
+
+
+#block-crossline-webform {
+  background-image: url('/themes/custom/crossline/images/Palermo+flan+pic.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 700px;
+  border-bottom: 5px solid;
+  border-top: 5px solid;
+  position: relative;
+  color: $white;
+  margin-bottom: 100px;
+  background-attachment: fixed;
+
+  > .container {
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+    margin-bottom: 150px;
+
+    h2 {
+      border-bottom: 2px solid $color-tomato;
+      display: inline-block;
+      margin-bottom: 50px;
+      padding-bottom: 10px;
+
+      &::after {
+        content: 'Personal A/C: 01640911511';
+        font-size: 30px;
+        font-weight: 600;
+        font-family: $font-jost;
+        margin-left: 50px;
+      }
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      color: $black;
+      column-gap: 30px;
+
+      .form-item {
+        margin-top: 0;
+
+        label {
+          color: $white;
+          margin-bottom: 15px;
+        }
+      }
+
+      .form-actions {
+        color: $white;
+        bottom: -70px;
+        position: absolute;
+
+        .js-form-submit {
+          background-color: transparent;
+          border: 2px solid #bb7f16;
+          border-radius: 4px;
+          color: #bb7f16;
+          display: inline-block;
+          font-family: 'Jost', sans-serif;
+          font-weight: 500;
+          letter-spacing: 1px;
+          padding: 12px 40px;
+          text-transform: uppercase;
+          transition: 0.4s;
+
+          &:hover {
+            background-color: $white;
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+
+  &::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+}
+
+@include lg {
+
+  #block-tengritag-webform {
+    margin-bottom: 50px;
+  
+    > .container {
+      position: relative;
+      z-index: 1;
+      margin-top: 50px;
+      margin-bottom: 110px;
+  
+      h2 {
+        margin-bottom: 30px;
+      }
+  
+      form {
+        grid-template-columns: repeat(1, 1fr);
+  
+        .form-actions {
+          bottom: -70px;
+          position: absolute;
+
+          .js-form-submit {
+            padding: 12px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+

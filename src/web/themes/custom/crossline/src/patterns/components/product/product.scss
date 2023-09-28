@@ -205,6 +205,7 @@
             .button--add-to-cart {
               font-size: 18px;
               background-color: $color-tomato;
+              border-radius: 20px;
               border: none;
               padding: 10px 20px;
               font-weight: 500;
@@ -217,11 +218,20 @@
           }
         }
 
-        .training-btn {
+        .buy-now-button {
+          border: none;
           background-color: $color-tomato;
           color: $white;
           padding: 11px 20px;
           font-weight: 500;
+          border-radius: 20px;
+
+          a {
+            color: $white;
+            font-weight: 500;
+            font-size: 18px;
+            text-transform: uppercase;
+          }
 
           &:hover {
             background-color: $color-tomato;

@@ -54,13 +54,17 @@
               {{ product.variations }}
             </button>
             {# <a href="/form/course-enquiry-form" class="webform-dialog webform-dialog-narrow button modal-btn">EnQuiry</a> #}
-            <button type="button" class="btn btn-primary modal-btn training-btn" id="{{product_entity.product_id.value}}" data-bs-toggle="modal" data-bs-target="#trainingModal">
+          
+              <button class="buy-now-button"><a href="/checkout">Buy Now</a></button>
+            
+
+            {# <button type="button" class="btn btn-primary modal-btn training-btn" id="{{product_entity.product_id.value}}" data-bs-toggle="modal" data-bs-target="#trainingModal">
               Buy Now
-            </button>
+            </button> #}
 
 
             <!-- Modal -->
-            <div class="modal fade" id="trainingModal" tabindex="-1" aria-labelledby="trainingModalLabel" aria-hidden="true">
+            {# <div class="modal fade" id="trainingModal" tabindex="-1" aria-labelledby="trainingModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -73,7 +77,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> #}
           </div>
 
 

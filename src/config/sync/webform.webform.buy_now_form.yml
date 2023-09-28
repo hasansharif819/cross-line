@@ -16,15 +16,19 @@ elements: |-
   name:
     '#type': textfield
     '#title': Name
+    '#required': true
   email:
     '#type': email
     '#title': Email
+    '#required': true
   phone:
     '#type': tel
     '#title': Phone
+    '#required': true
   address:
     '#type': textfield
     '#title': Address
+    '#required': true
   product:
     '#type': entity_autocomplete
     '#title': Product
@@ -36,18 +40,22 @@ elements: |-
       sort:
         field: product_id
         direction: ASC
+  product_code:
+    '#type': textfield
+    '#title': 'Product Code'
+    '#required': true
   size:
     '#type': textfield
     '#title': Size
+    '#required': true
   price:
     '#type': textfield
     '#title': Price
+    '#required': true
   transaction_id:
     '#type': textfield
     '#title': 'Transaction ID'
-  message:
-    '#type': textarea
-    '#title': Message
+    '#required': true
 css: ''
 javascript: ''
 settings:

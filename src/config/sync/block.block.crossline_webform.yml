@@ -1,0 +1,35 @@
+uuid: f73ad2c7-199f-47de-9165-43ba8898e44a
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.buy_now_form
+  module:
+    - block_classes
+    - system
+    - webform
+  theme:
+    - crossline
+third_party_settings:
+  block_classes:
+    block_class: 'container checkout-now'
+id: crossline_webform
+theme: crossline
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Pay using Bkash, Nogod, Rocket'
+  label_display: visible
+  provider: webform
+  webform_id: buy_now_form
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /checkout
