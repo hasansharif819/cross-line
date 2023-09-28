@@ -1,0 +1,142 @@
+// Utilities
+//
+// Import variables and mixins
+// Should contain NO css output.
+// Only variables / mixins / settings.
+@import '../../global/utils/init';
+
+.front-page-product {
+  margin-bottom: 50px;
+  text-align: center;
+
+  h2 {
+    border-bottom: 2px solid $color-tomato;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+  }
+
+  .view-content {
+
+    .owl-stage-outer {
+
+      .owl-item {
+        padding: 30px !important;
+
+        .product-content {
+          height: 100%;
+          box-shadow: 0 5px 16px 0 rgba(8, 15, 52, 0.07);
+
+          .product-content-image {
+            overflow: hidden;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .product-wrapper {
+            padding: 20px;
+            position: relative;
+            text-align: left;
+
+            .title {
+              font-family: var(--font-poppins);
+              color: $color-tomato;
+              font-size: 20px;
+              margin-bottom: 20px;
+              transition: all 0.4s linear;
+            }
+
+            .body {
+              font-family: var(--font-poppins-light);
+              color: var(--color-black);
+              margin-bottom: 50px;
+            }
+
+            .read-more {
+              align-items: center;
+              bottom: 23px;
+              color: $color-tomato;
+              display: flex;
+              font-family: var(--font-poppins-light);
+              font-weight: 600;
+              letter-spacing: 1px;
+              position: absolute;
+              transition: all 0.4s linear;
+
+              &::after {
+                content: '\f30b';
+                font-family: var(--font-fontawesome);
+                font-weight: 600;
+                font-size: 18px;
+                margin-top: 3px;
+                padding-left: 10px;
+                vertical-align: middle;
+                transition: all 0.4s linear;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .owl-nav,
+    .owl-dots {
+      display: none;
+    }
+  }
+
+  .view-footer {
+    margin-top: 50px;
+    text-align: center;
+
+    .more-product-button {
+      
+      a {
+        border: 2px solid $color-title;
+        border-radius: 4px;
+        color: $color-title;
+        display: inline-block;
+        font-family: $font-jost;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 12px 40px;
+        text-transform: uppercase;
+        transition: 0.4s linear;
+
+        &:hover {
+          border: 2px solid $color-tomato;
+          background-color: $color-tomato;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+@include lg {
+
+  .block-views-blockour-kitchen-staff-block-1 {
+    margin-bottom: 50px;
+
+    .container {
+      text-align: start;
+      
+      h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+
+      .view-content {
+
+        .owl-stage-outer {
+
+          .owl-item {
+            padding: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}

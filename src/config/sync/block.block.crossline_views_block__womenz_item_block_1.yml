@@ -1,9 +1,9 @@
-uuid: 4ff24e79-7f64-4d0b-8b5f-36a626078afd
+uuid: 015f4ae7-6005-47d1-af58-13010514aed3
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.testinomial
+    - views.view.womenz_item
   module:
     - block_classes
     - system
@@ -12,17 +12,17 @@ dependencies:
     - crossline
 third_party_settings:
   block_classes:
-    block_class: container
-id: crossline_views_block__testinomial_block_1
+    block_class: 'container front-page-product'
+id: crossline_views_block__womenz_item_block_1
 theme: crossline
 region: content
-weight: -5
+weight: -8
 provider: null
-plugin: 'views_block:testinomial-block_1'
+plugin: 'views_block:womenz_item-block_1'
 settings:
-  id: 'views_block:testinomial-block_1'
+  id: 'views_block:womenz_item-block_1'
   label: ''
-  label_display: '0'
+  label_display: visible
   provider: views
   views_label: ''
   items_per_page: none

@@ -9,7 +9,7 @@ _core:
 id: crossline_page_title
 theme: crossline
 region: content
-weight: -1
+weight: 0
 provider: null
 plugin: page_title_block
 settings:
