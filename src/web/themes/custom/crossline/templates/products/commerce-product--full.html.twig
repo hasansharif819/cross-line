@@ -1,0 +1,76 @@
+{#
+/**
+ * @file
+ *
+ * Default product template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - product: The rendered product fields.
+ *   Use 'product' to print them all, or print a subset such as
+ *   'product.title'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ product|without('title') }}
+ *   @endcode
+ * - product_entity: The product entity.
+ * - product_url: The product URL.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set product_type = product.title['#bundle'] %}
+{% set image_uri = product.field_product_image[0]['#item'].entity.uri.value %}
+{% set styled_image_url = image_uri|image_style('product_details_image') %}
+
+<article{{ attributes }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+
+  <div class="training-details-container">
+    <div class="image-content">
+      <div class="image-wrapper">
+        <img src="{{ styled_image_url }}" alt="Image Alt Text">
+      </div>
+    </div>
+    <div class="body-content">
+        {{ product.title }}
+        {{ product.body }}
+        {{ product.field_category}}
+        {{ product.field_size }}
+        {{ product.field_product_code	}}
+        <div class="product-price">
+        {{ product.variation_list_price }}
+        {{ product.variation_price }}
+        </div>
+        
+        <div>
+          <button type="button" class="btn add-to-cart-button">
+            {{ product.variations }}
+          </button>
+        </div>
+    </div>
+  </div>
+</article>
+
+{# <article{{ attributes }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  {{- product|without('variation_attributes') -}}
+</article>
+
+{{ product.title }}
+{{ product.body }}
+{{ product.field_category}}
+{{ product.field_product_code	}}
+{{ product.field_product_image }}
+{{ product.field_size }}
+{{ product.variation_list_price }}
+{{ product.variation_price }}
+{{ product.variations }} #}
+

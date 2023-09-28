@@ -6,7 +6,7 @@ dependencies:
     - crossline
 id: crossline_pagetitle
 theme: crossline
-region: page_title
+region: header
 weight: 0
 provider: null
 plugin: page_title_block
