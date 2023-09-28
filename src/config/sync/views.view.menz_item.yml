@@ -557,9 +557,9 @@ display:
           items: '3'
           margin: '0'
           nav: 0
-          autoplay: 0
+          autoplay: 1
           autoplayHoverPause: 0
-          loop: 0
+          loop: 1
           dots: 1
           dimensionMobile: '300'
           itemsMobile: '1'
@@ -588,7 +588,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<div class="more-product-button"><a href="/products">See More</a></div>'
+            value: '<div class="more-product-button"><a href="/menz">See More</a></div>'
             format: full_html
           tokenize: false
       display_extenders: {  }

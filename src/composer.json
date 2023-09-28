@@ -28,6 +28,7 @@
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/owlcarousel": "^3.0",
         "drupal/page_specific_class": "^2.0",
+        "drupal/pathauto": "^1.11",
         "drupal/twig_tweak": "^3.2",
         "drupal/webform": "^6.2@beta",
         "drush/drush": "^12.2"

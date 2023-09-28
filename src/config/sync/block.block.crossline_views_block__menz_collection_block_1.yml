@@ -1,0 +1,33 @@
+uuid: 89004f9e-ea82-49b5-92aa-0e71c7a8131f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.menz_collection
+  module:
+    - block_classes
+    - system
+    - views
+  theme:
+    - crossline
+third_party_settings:
+  block_classes:
+    block_class: 'container front-page-product'
+id: crossline_views_block__menz_collection_block_1
+theme: crossline
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:menz_collection-block_1'
+settings:
+  id: 'views_block:menz_collection-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /menz

@@ -588,7 +588,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<div class="more-product-button"><a href="/products">See More</a></div>'
+            value: '<div class="more-product-button"><a href="/womenz">See More</a></div>'
             format: full_html
           tokenize: false
       display_extenders: {  }

@@ -1,5 +1,7 @@
-#block-tengritag-views-block-slider-block-1 .contextual {
-  top: 50px; }
+#block-crossline-views-block-slider-block-1 {
+  margin-bottom: 50px; }
+  #block-crossline-views-block-slider-block-1 .contextual {
+    top: 50px; }
 
 .view-slider .owl-carousel .owl-nav {
   align-items: center;

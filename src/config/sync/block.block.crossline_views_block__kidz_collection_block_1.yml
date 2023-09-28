@@ -1,0 +1,33 @@
+uuid: c9288b87-c85d-4e00-bb27-5a717226256b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.kidz_collection
+  module:
+    - block_classes
+    - system
+    - views
+  theme:
+    - crossline
+third_party_settings:
+  block_classes:
+    block_class: 'container front-page-product'
+id: crossline_views_block__kidz_collection_block_1
+theme: crossline
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:kidz_collection-block_1'
+settings:
+  id: 'views_block:kidz_collection-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /kidz
