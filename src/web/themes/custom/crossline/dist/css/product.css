@@ -1,0 +1,199 @@
+.view-categorywise-products {
+  margin: 50px 0 100px; }
+  .view-categorywise-products .view-content h3 {
+    border-bottom: 2px solid #e25111;
+    display: inline-block;
+    margin: 50px 0; }
+  .view-categorywise-products .view-content .categorywise-products-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; }
+  .view-categorywise-products .view-content .views-row {
+    height: 100%;
+    box-shadow: 0 5px 16px 0 rgba(8, 15, 52, 0.07); }
+    .view-categorywise-products .view-content .views-row .product-content .product-content-image {
+      overflow: hidden; }
+      .view-categorywise-products .view-content .views-row .product-content .product-content-image img {
+        width: 100%; }
+    .view-categorywise-products .view-content .views-row .product-content .product-wrapper {
+      padding: 20px;
+      position: relative; }
+      .view-categorywise-products .view-content .views-row .product-content .product-wrapper .title {
+        font-family: var(--font-poppins);
+        color: var(--color-dodger-blue);
+        font-size: 20px;
+        margin-bottom: 20px;
+        transition: all 0.4s linear; }
+      .view-categorywise-products .view-content .views-row .product-content .product-wrapper .body {
+        font-family: var(--font-poppins-light);
+        color: var(--color-black);
+        margin-bottom: 50px; }
+      .view-categorywise-products .view-content .views-row .product-content .product-wrapper .read-more {
+        align-items: center;
+        bottom: 23px;
+        color: var(--color-dodger-blue);
+        display: flex;
+        font-family: var(--font-poppins-light);
+        font-weight: 600;
+        letter-spacing: 1px;
+        position: absolute;
+        transition: all 0.4s linear; }
+        .view-categorywise-products .view-content .views-row .product-content .product-wrapper .read-more::after {
+          content: '\f30b';
+          font-family: var(--font-fontawesome);
+          font-weight: 600;
+          font-size: 18px;
+          margin-top: 3px;
+          padding-left: 10px;
+          vertical-align: middle;
+          transition: all 0.4s linear; }
+    .view-categorywise-products .view-content .views-row:hover img {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      transition: 0.7s; }
+    .view-categorywise-products .view-content .views-row:hover .product-wrapper .title {
+      color: var(--color-radical-red); }
+    .view-categorywise-products .view-content .views-row:hover .product-wrapper .read-more {
+      border-radius: 4px;
+      color: var(--color-radical-red); }
+      .view-categorywise-products .view-content .views-row:hover .product-wrapper .read-more::after {
+        padding-left: 20px; }
+
+.path-product .training-details-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 50px 0 100px; }
+  .path-product .training-details-container .image-content .image-wrapper {
+    background: var(--color-flamingo);
+    border-radius: 0 50px;
+    margin-top: 30px;
+    margin-left: 30px; }
+  .path-product .training-details-container .image-content img {
+    margin-bottom: 30px;
+    margin-left: -30px;
+    margin-top: -30px;
+    border-radius: 0 50px;
+    margin-right: 30px; }
+  .path-product .training-details-container .body-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    margin: 0 30px; }
+    .path-product .training-details-container .body-content .field--name-title {
+      font-size: 40px;
+      font-family: var(--font-manrope);
+      font-weight: 700;
+      margin-bottom: 30px; }
+    .path-product .training-details-container .body-content li {
+      font-size: 16px; }
+    .path-product .training-details-container .body-content .duration {
+      display: inline-flex;
+      gap: 10px;
+      color: var(--color-blue-zodiac);
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 30px; }
+    .path-product .training-details-container .body-content .modal-btn {
+      background: var(--color-dodger-blue);
+      border: 1px solid var(--color-dodger-blue);
+      color: var(--color-white);
+      font-weight: 600;
+      font-family: var(--font-poppins);
+      border-radius: 4px;
+      text-transform: uppercase;
+      padding: 12px 40px;
+      letter-spacing: 1.5px; }
+      .path-product .training-details-container .body-content .modal-btn:hover {
+        background: var(--color-white);
+        color: var(--color-blue-zodiac); }
+    .path-product .training-details-container .body-content .modal .modal-content {
+      padding: 30px;
+      border: 0;
+      border-radius: 20px; }
+      .path-product .training-details-container .body-content .modal .modal-content .modal-header {
+        border: 0;
+        display: block;
+        position: relative;
+        text-align: center;
+        padding: 15px 20px; }
+        .path-product .training-details-container .body-content .modal .modal-content .modal-header h5 {
+          color: var(--color-blue-zodiac);
+          font-size: 30px;
+          font-family: var(--font-manrope);
+          text-transform: uppercase; }
+        .path-product .training-details-container .body-content .modal .modal-content .modal-header .btn-close {
+          background-color: var(--color-radical-red);
+          border-radius: 50%;
+          font-size: 12px;
+          top: -15px;
+          right: -15px;
+          position: absolute; }
+          .path-product .training-details-container .body-content .modal .modal-content .modal-header .btn-close:focus {
+            box-shadow: none; }
+      .path-product .training-details-container .body-content .modal .modal-content .modal-body .form-item {
+        margin-bottom: 25px; }
+      .path-product .training-details-container .body-content .modal .modal-content .modal-body input,
+      .path-product .training-details-container .body-content .modal .modal-content .modal-body textarea {
+        border: 0;
+        border-bottom: 2px solid var(--color-grey);
+        border-radius: 0; }
+        .path-product .training-details-container .body-content .modal .modal-content .modal-body input:focus,
+        .path-product .training-details-container .body-content .modal .modal-content .modal-body textarea:focus {
+          box-shadow: none;
+          border-color: var(--color-blue-zodiac); }
+        .path-product .training-details-container .body-content .modal .modal-content .modal-body input::-webkit-input-placeholder,
+        .path-product .training-details-container .body-content .modal .modal-content .modal-body textarea::-webkit-input-placeholder {
+          color: var(--color-dark-gray); }
+        .path-product .training-details-container .body-content .modal .modal-content .modal-body input::-moz-placeholder,
+        .path-product .training-details-container .body-content .modal .modal-content .modal-body textarea::-moz-placeholder {
+          color: var(--color-dark-gray); }
+        .path-product .training-details-container .body-content .modal .modal-content .modal-body input::-ms-input-placeholder,
+        .path-product .training-details-container .body-content .modal .modal-content .modal-body textarea::-ms-input-placeholder {
+          color: var(--color-dark-gray); }
+        .path-product .training-details-container .body-content .modal .modal-content .modal-body input::placeholder,
+        .path-product .training-details-container .body-content .modal .modal-content .modal-body textarea::placeholder {
+          color: var(--color-dark-gray); }
+        .path-product .training-details-container .body-content .modal .modal-content .modal-body input:disabled,
+        .path-product .training-details-container .body-content .modal .modal-content .modal-body textarea:disabled {
+          background: transparent; }
+      .path-product .training-details-container .body-content .modal .modal-content .modal-body label {
+        color: var(--color-dark-gray); }
+      .path-product .training-details-container .body-content .modal .modal-content .modal-body .form-actions {
+        display: flex;
+        justify-content: center; }
+        .path-product .training-details-container .body-content .modal .modal-content .modal-body .form-actions .btn {
+          background: var(--color-dodger-blue);
+          border: 1px solid var(--color-dodger-blue);
+          color: var(--color-white);
+          font-family: var(--font-poppins);
+          border-radius: 4px;
+          padding: 12px 40px; }
+          .path-product .training-details-container .body-content .modal .modal-content .modal-body .form-actions .btn:hover {
+            background: var(--color-white);
+            color: var(--color-blue-zodiac); }
+
+@media (max-width: 991px) {
+  .view-training {
+    margin: 0 0 50px; }
+    .view-training .view-content {
+      grid-template-columns: repeat(2, 1fr); }
+  .path-product .training-details-container {
+    flex-direction: column;
+    margin: 0 0 50px; }
+    .path-product .training-details-container .image-content img {
+      width: 100%; }
+    .path-product .training-details-container .body-content {
+      padding: 0;
+      margin: 0; }
+      .path-product .training-details-container .body-content .field--name-title {
+        font-size: 32px; } }
+
+@media (max-width: 767px) {
+  .view-training .view-content {
+    grid-template-columns: repeat(1, 1fr); }
+  .path-product .training-details-container .body-content .field--name-title {
+    font-size: 26px; } }
+
+/*# sourceMappingURL=product.css.map */

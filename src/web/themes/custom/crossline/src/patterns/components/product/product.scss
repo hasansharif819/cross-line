@@ -5,31 +5,30 @@
 // Only variables / mixins / settings.
 @import '../../global/utils/init';
 
-.training-page {
-
-  &:not(.user-logged-in) {
-    
-    .node--type-page {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.view-training {
+.view-categorywise-products {
   margin: 50px 0 100px;
 
   .view-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+
+    h3 {
+      border-bottom: 2px solid $color-tomato;
+      display: inline-block;
+      margin: 50px 0;
+    }
+
+    .categorywise-products-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
 
     .views-row {
       height: 100%;
       box-shadow: 0 5px 16px 0 rgba(8, 15, 52, 0.07);
 
-      .training-content {
+      .product-content {
 
-        .training-content-image {
+        .product-content-image {
           overflow: hidden;
 
           img {
@@ -37,7 +36,7 @@
           }
         }
 
-        .training-wrapper {
+        .product-wrapper {
           padding: 20px;
           position: relative;
 
@@ -87,7 +86,7 @@
           transition: 0.7s;
         }
 
-        .training-wrapper {
+        .product-wrapper {
 
           .title {
             color: var(--color-radical-red);

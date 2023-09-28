@@ -4,14 +4,16 @@ status: true
 dependencies:
   config:
     - commerce_product.commerce_product_type.cross_line_product
+    - field.storage.commerce_product.body
     - field.storage.commerce_product.field_category
     - field.storage.commerce_product.field_product_code
     - field.storage.commerce_product.field_product_image
-    - image.style.product_image
+    - image.style.product_cart_image
   module:
     - commerce
     - commerce_product
     - image
+    - text
 id: categorywise_products
 label: 'Categorywise Products'
 module: views
@@ -28,6 +30,72 @@ display:
     display_options:
       title: 'Categorywise Products'
       fields:
+        field_product_image:
+          id: field_product_image
+          table: commerce_product__field_product_image
+          field: field_product_image
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_link: ''
+            image_style: product_cart_image
+            image_loading:
+              attribute: lazy
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         title:
           id: title
           table: commerce_product_field_data
@@ -219,10 +287,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_product_image:
-          id: field_product_image
-          table: commerce_product__field_product_image
-          field: field_product_image
+        body:
+          id: body
+          table: commerce_product__body
+          field: body
           relationship: none
           group_type: group
           admin_label: ''
@@ -268,14 +336,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
+          click_sort_column: format
+          type: text_trimmed
           settings:
-            image_link: ''
-            image_style: product_image
-            image_loading:
-              attribute: lazy
-          group_column: ''
+            trim_length: 150
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -350,7 +415,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<a href=\"{{ view_commerce_product }}\" class=\"products-style\">\r\n<div class=\"products-image\">{{ field_product_image }}</div>\r\n<div class=\"details-wrapper\">\r\n<h4>{{ title }}</h4>\r\n<p>{{ field_category }}</p>\r\n<p>{{ field_product_code }}</p>\r\n</div>\r\n</a>"
+            text: "<a href=\"{{ view_commerce_product }}\" data-aos=\"fade-up\">\r\n\t<div class=\"product-content\">\r\n\t\t<div class=\"product-content-image\">\r\n\t\t\t{{ field_product_image }}\r\n\t\t</div>\r\n\t\t<div class=\"product-wrapper\">\r\n\t\t\t<div class=\"title\">{{ title }} </div>\r\n                        <div class=\"category\">{{ field_category }}</div>\r\n\t\t\t<div class=\"body\">{{ body }} </div>\r\n\t\t\t<div class=\"read-more\">Read More</div>\r\n\t\t</div>\r\n\t</div>\r\n</a>\r\n"
             make_link: false
             path: ''
             absolute: false
@@ -462,6 +527,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
       tags:
+        - 'config:field.storage.commerce_product.body'
         - 'config:field.storage.commerce_product.field_category'
         - 'config:field.storage.commerce_product.field_product_code'
         - 'config:field.storage.commerce_product.field_product_image'
@@ -478,6 +544,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
       tags:
+        - 'config:field.storage.commerce_product.body'
         - 'config:field.storage.commerce_product.field_category'
         - 'config:field.storage.commerce_product.field_product_code'
         - 'config:field.storage.commerce_product.field_product_image'

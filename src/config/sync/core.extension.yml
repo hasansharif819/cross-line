@@ -53,6 +53,7 @@ module:
   options: 0
   owlcarousel: 0
   page_cache: 0
+  page_specific_class: 0
   path: 0
   path_alias: 0
   profile: 0

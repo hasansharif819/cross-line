@@ -12,7 +12,7 @@ dependencies:
     - crossline
 third_party_settings:
   block_classes:
-    block_class: 'container categorywise-menu'
+    block_class: container
 id: crossline_views_block__categorywise_products_block_1
 theme: crossline
 region: content
@@ -30,4 +30,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '<front>'
+    pages: /products
