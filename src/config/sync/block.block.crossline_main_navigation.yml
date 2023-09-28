@@ -13,7 +13,7 @@ _core:
 id: crossline_main_navigation
 theme: crossline
 region: nav_main
-weight: 0
+weight: -10
 provider: null
 plugin: 'system_menu_block:main'
 settings:

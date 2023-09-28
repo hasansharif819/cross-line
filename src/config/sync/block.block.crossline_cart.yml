@@ -1,0 +1,21 @@
+uuid: 5f85d46c-52bc-4242-b671-af6a02c53791
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - crossline
+id: crossline_cart
+theme: crossline
+region: nav_main
+weight: -9
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  label_display: '0'
+  provider: commerce_cart
+  dropdown: true
+visibility: {  }
