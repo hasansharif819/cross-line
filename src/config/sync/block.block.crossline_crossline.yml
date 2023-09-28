@@ -22,7 +22,7 @@ plugin: 'block_content:2104c8f5-9201-40df-b53f-4264725dbe83'
 settings:
   id: 'block_content:2104c8f5-9201-40df-b53f-4264725dbe83'
   label: 'Cross Line'
-  label_display: '0'
+  label_display: visible
   provider: block_content
   status: true
   info: ''
