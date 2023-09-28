@@ -546,6 +546,29 @@ header {
   header .navbar-brand img {
     height: 36px; } }
 
+.nav-cart-item {
+  height: 40px; }
+  .nav-cart-item .cart-block--summary__count {
+    color: #ffffff;
+    padding: 0 !important;
+    margin-right: 30px; }
+    .nav-cart-item .cart-block--summary__count::after {
+      content: '';
+      display: block;
+      width: 0%;
+      height: 2px;
+      background: #e25111;
+      transition: width 0.5s;
+      margin-top: 5px; }
+    .nav-cart-item .cart-block--summary__count:hover {
+      color: #e25111; }
+      .nav-cart-item .cart-block--summary__count:hover::after {
+        width: 100%; }
+    .nav-cart-item .cart-block--summary__count:focus {
+      color: #e25111; }
+  .nav-cart-item .is-active {
+    color: #e25111 !important; }
+
 /*# sourceMappingURL=header.css.map */
 
 .hero-wrapper {

@@ -167,3 +167,38 @@ header {
   }
 }
 
+.nav-cart-item {
+height: 40px;
+
+  .cart-block--summary__count {
+    color: $white;
+    padding: 0 !important;
+    margin-right: 30px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0%;
+      height: 2px;
+      background: $color-tomato;
+      transition: width 0.5s;
+      margin-top: 5px;
+    }
+
+    &:hover {
+      color: $color-tomato;
+
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &:focus {
+      color: $color-tomato;
+    }
+  }
+
+  .is-active {
+    color: $color-tomato !important;
+  }
+}

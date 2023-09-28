@@ -1,15 +1,19 @@
-uuid: 5f85d46c-52bc-4242-b671-af6a02c53791
+uuid: 4064005f-27c4-4e45-96fb-e37ce2f0e05e
 langcode: en
 status: true
 dependencies:
   module:
+    - block_classes
     - commerce_cart
   theme:
     - crossline
+third_party_settings:
+  block_classes:
+    block_class: nav-cart-item
 id: crossline_cart
 theme: crossline
-region: nav_main
-weight: -9
+region: nav_additional
+weight: 0
 provider: null
 plugin: commerce_cart
 settings:
