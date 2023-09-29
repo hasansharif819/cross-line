@@ -1,0 +1,18 @@
+uuid: b2ff9ec9-78d4-4299-80e9-7955995b1bc9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - crossline
+id: crossline_pagetitle_2
+theme: crossline
+region: page_title
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }
