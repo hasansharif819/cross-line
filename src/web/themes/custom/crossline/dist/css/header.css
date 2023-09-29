@@ -4,6 +4,8 @@ header {
   width: 100%;
   transition: 0.7s;
   z-index: 100; }
+  header .navbar-brand .site-title {
+    color: #ffffff; }
   header .navbar-toggler {
     border: 0;
     padding: 0; }
@@ -41,18 +43,46 @@ header {
       color: #e25111; }
   header .navbar-nav li .is-active {
     color: #e25111 !important; }
+  header .nav-cart-item {
+    height: 40px; }
+    header .nav-cart-item .cart-block--summary__count {
+      color: #ffffff;
+      padding: 0 !important;
+      margin-right: 30px; }
+      header .nav-cart-item .cart-block--summary__count::after {
+        content: '';
+        display: block;
+        width: 0%;
+        height: 2px;
+        background: #e25111;
+        transition: width 0.5s;
+        margin-top: 5px; }
+      header .nav-cart-item .cart-block--summary__count:hover {
+        color: #e25111; }
+        header .nav-cart-item .cart-block--summary__count:hover::after {
+          width: 100%; }
+      header .nav-cart-item .cart-block--summary__count:focus {
+        color: #e25111; }
+    header .nav-cart-item .is-active {
+      color: #e25111 !important; }
 
 .sticky-header {
   background: #ffffff;
   box-shadow: 0 15px 18px -3px rgba(0, 0, 0, 0.1);
   min-height: 90px;
   position: fixed; }
+  .sticky-header .navbar-brand .site-title {
+    color: #000000; }
   .sticky-header .navbar-nav li a {
     color: #000000; }
     .sticky-header .navbar-nav li a:hover {
       color: #000000; }
   .sticky-header .navbar-nav li .is-active {
     color: #e25111 !important; }
+  .sticky-header .nav-cart-item .cart-block--summary__icon img {
+    color: #000000 !important; }
+  .sticky-header .nav-cart-item .cart-block--summary__count {
+    color: #000000; }
 
 @media (max-width: 991px) {
   header {
@@ -80,28 +110,5 @@ header {
 @media (max-width: 767px) {
   header .navbar-brand img {
     height: 36px; } }
-
-.nav-cart-item {
-  height: 40px; }
-  .nav-cart-item .cart-block--summary__count {
-    color: #ffffff;
-    padding: 0 !important;
-    margin-right: 30px; }
-    .nav-cart-item .cart-block--summary__count::after {
-      content: '';
-      display: block;
-      width: 0%;
-      height: 2px;
-      background: #e25111;
-      transition: width 0.5s;
-      margin-top: 5px; }
-    .nav-cart-item .cart-block--summary__count:hover {
-      color: #e25111; }
-      .nav-cart-item .cart-block--summary__count:hover::after {
-        width: 100%; }
-    .nav-cart-item .cart-block--summary__count:focus {
-      color: #e25111; }
-  .nav-cart-item .is-active {
-    color: #e25111 !important; }
 
 /*# sourceMappingURL=header.css.map */
