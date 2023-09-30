@@ -46,7 +46,15 @@ header {
   header .navbar-nav li .is-active {
     color: #e25111 !important; }
   header .nav-cart-item {
-    height: 40px; }
+    height: 35px; }
+    header .nav-cart-item .cart-block--summary__icon img {
+      display: none; }
+    header .nav-cart-item .cart-block--summary__icon::before {
+      content: '\f07a';
+      color: #ffffff;
+      display: inline-block;
+      font-family: "FontAwesome";
+      font-weight: bold; }
     header .nav-cart-item .cart-block--summary__count {
       color: #ffffff;
       padding: 0 !important;
@@ -83,8 +91,8 @@ header {
       color: #000000; }
   .sticky-header .navbar-nav li .is-active {
     color: #e25111 !important; }
-  .sticky-header .nav-cart-item .cart-block--summary__icon img {
-    color: #000000 !important; }
+  .sticky-header .nav-cart-item .cart-block--summary__icon::before {
+    color: #000000; }
   .sticky-header .nav-cart-item .cart-block--summary__count {
     color: #000000; }
 
@@ -113,7 +121,11 @@ header {
             padding: 2px 0; }
     header.sticky-header {
       min-height: unset;
-      top: 0 !important; } }
+      top: 0 !important; }
+    header .nav-cart-item .cart-block--summary__icon::before {
+      color: #000000; }
+    header .nav-cart-item .cart-block--summary__count {
+      color: #000000; } }
 
 @media (max-width: 767px) {
   header .navbar-brand img {

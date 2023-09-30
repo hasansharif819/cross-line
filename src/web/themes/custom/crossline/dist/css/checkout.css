@@ -4,8 +4,34 @@
   color: #e25111;
   line-height: 50px; }
 
+.checkout-page-form {
+  margin-bottom: 50px; }
+  .checkout-page-form .layout-region-checkout-secondary .checkout-pane-coupon-redemption {
+    display: none; }
+  .checkout-page-form .layout-region-checkout-secondary .checkout-now-button {
+    border: none;
+    background-color: #e25111;
+    color: #ffffff;
+    padding: 11px 20px;
+    font-weight: 500;
+    border-radius: 20px; }
+    .checkout-page-form .layout-region-checkout-secondary .checkout-now-button a {
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 18px;
+      text-transform: uppercase; }
+    .checkout-page-form .layout-region-checkout-secondary .checkout-now-button:hover {
+      background-color: #e25111; }
+  .checkout-page-form .layout-region-checkout-footer .button--primary {
+    border: none;
+    background-color: #e25111;
+    color: #ffffff;
+    padding: 11px 20px;
+    font-weight: 500;
+    border-radius: 20px; }
+
 #block-crossline-webform {
-  background-image: url("/themes/custom/crossline/images/cap1.jpg");
+  background-image: url("/themes/custom/crossline/images/women-lehenga.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -21,9 +21,52 @@
   }
 }
 
+.checkout-page-form {
+  margin-bottom: 50px;
+
+  .layout-region-checkout-secondary {
+
+    .checkout-pane-coupon-redemption {
+      display: none;
+    }
+
+    .checkout-now-button {
+      border: none;
+      background-color: $color-tomato;
+      color: $white;
+      padding: 11px 20px;
+      font-weight: 500;
+      border-radius: 20px;
+
+      a {
+        color: $white;
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        background-color: $color-tomato;
+      }
+    }
+  }
+
+  .layout-region-checkout-footer {
+
+    .button--primary {
+      border: none;
+      background-color: $color-tomato;
+      color: $white;
+      padding: 11px 20px;
+      font-weight: 500;
+      border-radius: 20px;
+    }
+  }
+}
+
 
 #block-crossline-webform {
-  background-image: url('/themes/custom/crossline/images/cap1.jpg');
+  background-image: url('/themes/custom/crossline/images/women-lehenga.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

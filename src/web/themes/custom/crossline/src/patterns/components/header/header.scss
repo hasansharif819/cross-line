@@ -99,7 +99,22 @@ header {
   }
 
   .nav-cart-item {
-    height: 40px;
+    height: 35px;
+
+    .cart-block--summary__icon {
+
+      img {
+        display: none;
+      }
+
+      &::before {
+        content: '\f07a';
+        color: $white;
+        display: inline-block;
+        font-family: $font-awesome;
+        font-weight: bold;
+      }
+    }
 
     .cart-block--summary__count {
       color: $white;
@@ -174,8 +189,8 @@ header {
 
     .cart-block--summary__icon {
 
-      img {
-        color: $black !important;
+      &::before {
+        color: $black;
       }
     }
     
@@ -233,6 +248,20 @@ header {
     &.sticky-header {
       min-height: unset;
       top: 0 !important;
+    }
+
+    .nav-cart-item {
+
+      .cart-block--summary__icon {
+
+        &::before {
+          color: $black;
+        }
+      }
+      
+      .cart-block--summary__count {
+        color: $black;
+      }
     }
   }
 }

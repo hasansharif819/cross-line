@@ -289,8 +289,34 @@ table {
   color: #e25111;
   line-height: 50px; }
 
+.checkout-page-form {
+  margin-bottom: 50px; }
+  .checkout-page-form .layout-region-checkout-secondary .checkout-pane-coupon-redemption {
+    display: none; }
+  .checkout-page-form .layout-region-checkout-secondary .checkout-now-button {
+    border: none;
+    background-color: #e25111;
+    color: #ffffff;
+    padding: 11px 20px;
+    font-weight: 500;
+    border-radius: 20px; }
+    .checkout-page-form .layout-region-checkout-secondary .checkout-now-button a {
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 18px;
+      text-transform: uppercase; }
+    .checkout-page-form .layout-region-checkout-secondary .checkout-now-button:hover {
+      background-color: #e25111; }
+  .checkout-page-form .layout-region-checkout-footer .button--primary {
+    border: none;
+    background-color: #e25111;
+    color: #ffffff;
+    padding: 11px 20px;
+    font-weight: 500;
+    border-radius: 20px; }
+
 #block-crossline-webform {
-  background-image: url("/themes/custom/crossline/images/cap1.jpg");
+  background-image: url("/themes/custom/crossline/images/women-lehenga.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -375,7 +401,7 @@ table {
 
 #block-crossline-crossline {
   background-attachment: fixed;
-  background-image: url("/themes/custom/crossline/images/cap1.jpg");
+  background-image: url("/themes/custom/crossline/images/kids-item.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -457,7 +483,7 @@ table {
 /*# sourceMappingURL=crossline_blocks.css.map */
 
 footer {
-  background: #171717;
+  background-color: #000000;
   color: #ffffff;
   padding: 50px 0; }
   footer .container .region-footer {
@@ -612,7 +638,15 @@ header {
   header .navbar-nav li .is-active {
     color: #e25111 !important; }
   header .nav-cart-item {
-    height: 40px; }
+    height: 35px; }
+    header .nav-cart-item .cart-block--summary__icon img {
+      display: none; }
+    header .nav-cart-item .cart-block--summary__icon::before {
+      content: '\f07a';
+      color: #ffffff;
+      display: inline-block;
+      font-family: "FontAwesome";
+      font-weight: bold; }
     header .nav-cart-item .cart-block--summary__count {
       color: #ffffff;
       padding: 0 !important;
@@ -649,8 +683,8 @@ header {
       color: #000000; }
   .sticky-header .navbar-nav li .is-active {
     color: #e25111 !important; }
-  .sticky-header .nav-cart-item .cart-block--summary__icon img {
-    color: #000000 !important; }
+  .sticky-header .nav-cart-item .cart-block--summary__icon::before {
+    color: #000000; }
   .sticky-header .nav-cart-item .cart-block--summary__count {
     color: #000000; }
 
@@ -679,7 +713,11 @@ header {
             padding: 2px 0; }
     header.sticky-header {
       min-height: unset;
-      top: 0 !important; } }
+      top: 0 !important; }
+    header .nav-cart-item .cart-block--summary__icon::before {
+      color: #000000; }
+    header .nav-cart-item .cart-block--summary__count {
+      color: #000000; } }
 
 @media (max-width: 767px) {
   header .navbar-brand img {
@@ -1291,7 +1329,7 @@ header {
 
 .block-views-blocktestinomial-block-1 {
   background-attachment: fixed;
-  background-image: url("/themes/custom/crossline/images/cap1.jpg");
+  background-image: url("/themes/custom/crossline/images/man-suit1.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
