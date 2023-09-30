@@ -6,6 +6,8 @@ header {
   z-index: 100; }
   header .navbar-brand .site-title {
     color: #ffffff; }
+    header .navbar-brand .site-title:hover {
+      color: #ffffff; }
   header .navbar-toggler {
     border: 0;
     padding: 0; }
@@ -73,6 +75,8 @@ header {
   position: fixed; }
   .sticky-header .navbar-brand .site-title {
     color: #000000; }
+    .sticky-header .navbar-brand .site-title:hover {
+      color: #000000; }
   .sticky-header .navbar-nav li a {
     color: #000000; }
     .sticky-header .navbar-nav li a:hover {

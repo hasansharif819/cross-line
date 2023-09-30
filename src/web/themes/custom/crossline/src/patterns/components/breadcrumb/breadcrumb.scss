@@ -1,0 +1,27 @@
+// Utilities
+//
+// Import variables and mixins
+// Should contain NO css output.
+// Only variables / mixins / settings.
+@import '../../global/utils/init';
+
+#block-crossline-breadcrumbs {
+  display: none;
+}
+
+.feed-icons {
+  display: none;
+}
+
+#block-crossline-content {
+
+  article {
+
+    .node__content {
+
+      .field--name-field-hero-image {
+        display: none;
+      }
+    }
+  }
+}

@@ -12,7 +12,7 @@ dependencies:
     - crossline
 third_party_settings:
   block_classes:
-    block_class: container
+    block_class: 'container testimonial-block'
 id: crossline_views_block__testinomial_block_1
 theme: crossline
 region: content

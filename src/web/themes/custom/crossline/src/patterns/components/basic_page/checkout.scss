@@ -5,9 +5,25 @@
 // Only variables / mixins / settings.
 @import '../../global/utils/init';
 
+.checkout-page {
+
+  article {
+
+    .node__content {
+
+      .field--name-body {
+        margin-bottom: 50px;
+        text-align: center;
+        color: $color-tomato;
+        line-height: 50px;
+      }
+    }
+  }
+}
+
 
 #block-crossline-webform {
-  background-image: url('/themes/custom/crossline/images/Palermo+flan+pic.jpeg');
+  background-image: url('/themes/custom/crossline/images/cap1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,14 +46,6 @@
       display: inline-block;
       margin-bottom: 50px;
       padding-bottom: 10px;
-
-      &::after {
-        content: 'Personal A/C: 01640911511';
-        font-size: 30px;
-        font-weight: 600;
-        font-family: $font-jost;
-        margin-left: 50px;
-      }
     }
 
     form {

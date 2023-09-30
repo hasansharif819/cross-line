@@ -6,6 +6,15 @@
 @import '../../global/utils/init';
 
 .block-views-blocktestinomial-block-1 {
+  background-attachment: fixed;
+  background-image: url('/themes/custom/crossline/images/cap1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+  margin-bottom: 100px;
+  min-height: 500px;
+  position: relative;
 
   .container {
 
@@ -17,6 +26,7 @@
         display: inline-block;
         padding-bottom: 10px;
         margin-bottom: 50px;
+        margin-top: 50px;
       }
     }
 
@@ -66,6 +76,18 @@
       margin-bottom: 100px;
     }
   }
+
+  &::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
@@ -76,14 +98,16 @@
 @include lg {
 
   .block-views-blocktestinomial-block-1 {
+    margin-bottom: 50px;
+    min-height: 300px;
 
     .container {
 
       .view-header {
-        text-align: start;
+        text-align: center;
 
         h2 {
-          font-size: 28px;
+          font-size: 24px;
           margin-bottom: 20px;
         }
       }

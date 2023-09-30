@@ -21,7 +21,7 @@ provider: null
 plugin: webform_block
 settings:
   id: webform_block
-  label: 'Pay using Bkash, Nogod, Rocket'
+  label: 'Checkout Now'
   label_display: visible
   provider: webform
   webform_id: buy_now_form

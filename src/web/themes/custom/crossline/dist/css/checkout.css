@@ -1,5 +1,11 @@
+.checkout-page article .node__content .field--name-body {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #e25111;
+  line-height: 50px; }
+
 #block-crossline-webform {
-  background-image: url("/themes/custom/crossline/images/Palermo+flan+pic.jpeg");
+  background-image: url("/themes/custom/crossline/images/cap1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,12 +26,6 @@
       display: inline-block;
       margin-bottom: 50px;
       padding-bottom: 10px; }
-      #block-crossline-webform > .container h2::after {
-        content: 'Personal A/C: 01640911511';
-        font-size: 30px;
-        font-weight: 600;
-        font-family: "Jost", sans-serif;
-        margin-left: 50px; }
     #block-crossline-webform > .container form {
       display: grid;
       grid-template-columns: repeat(2, 1fr);

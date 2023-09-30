@@ -3,11 +3,12 @@
   .view-categorywise-products .view-content h3 {
     border-bottom: 2px solid #e25111;
     display: inline-block;
-    margin: 50px 0; }
+    margin-bottom: 50px; }
   .view-categorywise-products .view-content .categorywise-products-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px; }
+    gap: 40px;
+    margin-bottom: 50px; }
   .view-categorywise-products .view-content .views-row {
     height: 100%;
     box-shadow: 0 5px 16px 0 rgba(8, 15, 52, 0.07); }

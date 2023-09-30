@@ -48,6 +48,10 @@ elements: |-
     '#type': textfield
     '#title': Size
     '#required': true
+  quantity:
+    '#type': textfield
+    '#title': Quantity
+    '#required': true
   price:
     '#type': textfield
     '#title': Price
@@ -55,6 +59,10 @@ elements: |-
   transaction_id:
     '#type': textfield
     '#title': 'Transaction ID'
+    '#required': true
+  number_used_for_payment:
+    '#type': tel
+    '#title': 'Number used for Payment'
     '#required': true
 css: ''
 javascript: ''

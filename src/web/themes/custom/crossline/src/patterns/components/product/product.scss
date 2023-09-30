@@ -13,13 +13,14 @@
     h3 {
       border-bottom: 2px solid $color-tomato;
       display: inline-block;
-      margin: 50px 0;
+      margin-bottom: 50px;
     }
 
     .categorywise-products-wrapper {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 40px;
+      margin-bottom: 50px;
     }
 
     .views-row {
