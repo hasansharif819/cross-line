@@ -4,9 +4,9 @@ tag: i
 method: webfonts
 load_assets: true
 use_cdn: true
-external_svg_location: 'https://use.fontawesome.com/releases/v6.4.0/css/all.js'
+external_svg_location: 'https://use.fontawesome.com/releases/v6.4.0/css/all.css'
 use_shim: true
-external_shim_location: 'https://use.fontawesome.com/releases/v6.4.0/css/v4-shims.js'
+external_shim_location: 'https://use.fontawesome.com/releases/v6.4.0/css/v4-shims.css'
 allow_pseudo_elements: false
 use_solid_file: true
 use_regular_file: true
